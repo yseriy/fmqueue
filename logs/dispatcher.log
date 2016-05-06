@@ -1,0 +1,1007 @@
+INFO - Set signal handler - OK
+FATAL - Connect to storage - Error: <install_driver(Pg) failed: Can't locate DBD/Pg.pm in @INC (@INC contains: /usr/local/fmqueue/lib /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at (eval 66) line 3.
+Perhaps the DBD::Pg perl module hasn't been fully installed,
+or perhaps the capitalisation of 'Pg' isn't right.
+Available drivers: DBM, ExampleP, File, Gofer, Proxy, Sponge.
+ at /usr/local/fmqueue/lib/FMQueue/Storage/PG.pm line 42.
+>
+INFO - Set signal handler - OK
+FATAL - Connect to storage - Error: <DBI connect('dbname=scheduler;host=localhost;port=3102;','scheduler',...) failed: could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 3102?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 3102? at /usr/local/fmqueue/lib/FMQueue/Storage/PG.pm line 42.
+>
+INFO - Set signal handler - OK
+INFO - Connect to storage - OK
+INFO - Connect to client - OK
+INFO - Get ready tasks - OK
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"user1","address":"host1","data":{"command":"test_command","args":{"a2":2,"a1":1}}}
+INFO - Set queue - OK, Queue: host1 id = 6d5aa728-0d4b-11e6-b37b-5a5a47e7b3b7, task_id = 6d5ab420-0d4b-11e6-b37b-5a5a47e7b3b7
+INFO - Update task - OK, id = 6d5aa728-0d4b-11e6-b37b-5a5a47e7b3b7, task_id = 6d5ab420-0d4b-11e6-b37b-5a5a47e7b3b7
+INFO - Send message - OK, id = 6d5aa728-0d4b-11e6-b37b-5a5a47e7b3b7, task_id = 6d5ab420-0d4b-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Set queue - OK, Queue: web01 id = 6593bf84-0d55-11e6-b37b-5a5a47e7b3b7, task_id = 65940b42-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Update task - OK, id = 6593bf84-0d55-11e6-b37b-5a5a47e7b3b7, task_id = 65940b42-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Send message - OK, id = 6593bf84-0d55-11e6-b37b-5a5a47e7b3b7, task_id = 65940b42-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Set queue - OK, Queue: web01 id = 89c7c012-0d55-11e6-b37b-5a5a47e7b3b7, task_id = 89c7cc38-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Update task - OK, id = 89c7c012-0d55-11e6-b37b-5a5a47e7b3b7, task_id = 89c7cc38-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Send message - OK, id = 89c7c012-0d55-11e6-b37b-5a5a47e7b3b7, task_id = 89c7cc38-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Set queue - OK, Queue: web01 id = 9d74b872-0d55-11e6-b37b-5a5a47e7b3b7, task_id = 9d74c114-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Update task - OK, id = 9d74b872-0d55-11e6-b37b-5a5a47e7b3b7, task_id = 9d74c114-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Send message - OK, id = 9d74b872-0d55-11e6-b37b-5a5a47e7b3b7, task_id = 9d74c114-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Set queue - OK, Queue: web01 id = c76ae322-0d55-11e6-b37b-5a5a47e7b3b7, task_id = c76aed54-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Update task - OK, id = c76ae322-0d55-11e6-b37b-5a5a47e7b3b7, task_id = c76aed54-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Send message - OK, id = c76ae322-0d55-11e6-b37b-5a5a47e7b3b7, task_id = c76aed54-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Set queue - OK, Queue: web01 id = eebe6f7a-0d55-11e6-b37b-5a5a47e7b3b7, task_id = eebe7c18-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Update task - OK, id = eebe6f7a-0d55-11e6-b37b-5a5a47e7b3b7, task_id = eebe7c18-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Send message - OK, id = eebe6f7a-0d55-11e6-b37b-5a5a47e7b3b7, task_id = eebe7c18-0d55-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Set queue - OK, Queue: web01 id = 49e234ea-0d56-11e6-b37b-5a5a47e7b3b7, task_id = 49e24f3e-0d56-11e6-b37b-5a5a47e7b3b7
+INFO - Update task - OK, id = 49e234ea-0d56-11e6-b37b-5a5a47e7b3b7, task_id = 49e24f3e-0d56-11e6-b37b-5a5a47e7b3b7
+INFO - Send message - OK, id = 49e234ea-0d56-11e6-b37b-5a5a47e7b3b7, task_id = 49e24f3e-0d56-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100-web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+ERROR - Set queue - Error: <Declaring queue: server channel error 406, message: PRECONDITION_FAILED - parameters for queue 'tst100-web00' in vhost '/' not equivalent at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 65.
+> Queue: tst100-web00, id = 7bffc528-0d56-11e6-b37b-5a5a47e7b3b7 task_id = 7bffd63a-0d56-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Set signal handler - OK
+INFO - Connect to storage - OK
+INFO - Connect to client - OK
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+ERROR - Set queue - Error: <Declaring queue: server channel error 406, message: PRECONDITION_FAILED - parameters for queue 'tst100web00' in vhost '/' not equivalent at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 65.
+> Queue: tst100web00, id = b6f478ee-0d57-11e6-b37b-5a5a47e7b3b7 task_id = b6f484a6-0d57-11e6-b37b-5a5a47e7b3b7
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+ERROR - Set queue - Error: <Declaring queue: server connection error 320, message: CONNECTION_FORCED - broker forced connection closure with reason 'shutdown' at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 65.
+> Queue: tst100web00, id = 134090ca-0d57-11e6-b37b-5a5a47e7b3b7 task_id = 13409c32-0d57-11e6-b37b-5a5a47e7b3b7
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100-web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+ERROR - Set queue - Error: <Declaring queue: failed since AMQP socket connection closed.
+> Queue: tst100-web00, id = 7bffc528-0d56-11e6-b37b-5a5a47e7b3b7 task_id = 7bffd63a-0d56-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+ERROR - Set queue - Error: <AMQP socket not connected at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 65.
+> Queue: tst100web00, id = b6f478ee-0d57-11e6-b37b-5a5a47e7b3b7 task_id = b6f484a6-0d57-11e6-b37b-5a5a47e7b3b7
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+ERROR - Set queue - Error: <AMQP socket not connected at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 65.
+> Queue: tst100web00, id = 134090ca-0d57-11e6-b37b-5a5a47e7b3b7 task_id = 13409c32-0d57-11e6-b37b-5a5a47e7b3b7
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100-web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+ERROR - Set queue - Error: <AMQP socket not connected at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 65.
+> Queue: tst100-web00, id = 7bffc528-0d56-11e6-b37b-5a5a47e7b3b7 task_id = 7bffd63a-0d56-11e6-b37b-5a5a47e7b3b7
+INFO - Waiting for the signal
+INFO - Set signal handler - OK
+INFO - Connect to storage - OK
+INFO - Connect to client - OK
+INFO - Get ready tasks - OK
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+ERROR - Set queue - Error: <Declaring queue: server channel error 406, message: PRECONDITION_FAILED - parameters for queue 'tst100web00' in vhost '/' not equivalent at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 65.
+> Queue: tst100web00, id = b6f478ee-0d57-11e6-b37b-5a5a47e7b3b7 task_id = b6f484a6-0d57-11e6-b37b-5a5a47e7b3b7
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 09:54:42 Set signal handler - OK
+2016/04/29 09:54:42 Connect to storage - OK
+2016/04/29 09:54:42 Connect to client - OK
+2016/04/29 09:54:42 Get ready tasks - OK
+2016/04/29 09:54:42 Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 09:54:42 Set queue - Error: <Declaring queue: server channel error 406, message: PRECONDITION_FAILED - parameters for queue 'tst100web00' in vhost '/' not equivalent at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 65.
+> Queue: tst100web00, id = b6f478ee-0d57-11e6-b37b-5a5a47e7b3b7 task_id = b6f484a6-0d57-11e6-b37b-5a5a47e7b3b7
+2016/04/29 09:54:42 Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:09:19 Set signal handler - Error: <Semaphore trouble: Permission denied at /usr/local/fmqueue/lib/FMQueue/Signal/Semaphore.pm line 30.
+>
+2016/04/29 10:10:36 Set signal handler - Error: <Semaphore trouble: Permission denied at /usr/local/fmqueue/lib/FMQueue/Signal/Semaphore.pm line 30.
+>
+2016/04/29 10:14:01 Set signal handler - OK
+2016/04/29 10:14:01 Connect to storage - OK
+2016/04/29 10:14:01 Connect to client - OK
+2016/04/29 10:14:01 Get ready tasks - OK
+2016/04/29 10:14:01 Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:14:01 Set queue - Error: <Declaring queue: server channel error 406, message: PRECONDITION_FAILED - parameters for queue 'tst100web00' in vhost '/' not equivalent at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 65.
+> Queue: tst100web00, id = b6f478ee-0d57-11e6-b37b-5a5a47e7b3b7 task_id = b6f484a6-0d57-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:14:01 Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:30:29 Set signal handler - OK
+2016/04/29 10:30:29 Connect to storage - OK
+2016/04/29 10:30:29 Connect to client - Error: <Declaring queue: server channel error 406, message: PRECONDITION_FAILED - parameters for queue 'response' in vhost '/' not equivalent at /usr/local/fmqueue/lib/FMQueue/Transport/Client/RabbitMQ.pm line 47.
+>
+2016/04/29 10:37:27 Set signal handler - OK
+2016/04/29 10:37:27 Connect to storage - OK
+2016/04/29 10:37:27 Connect to client - OK
+2016/04/29 10:37:27 Get ready tasks - OK
+2016/04/29 10:37:27 Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:37:27 Set queue - OK, Queue: tst100web00 id = b6f478ee-0d57-11e6-b37b-5a5a47e7b3b7, task_id = b6f484a6-0d57-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:37:27 Update task - OK, id = b6f478ee-0d57-11e6-b37b-5a5a47e7b3b7, task_id = b6f484a6-0d57-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:37:27 Send message - OK, id = b6f478ee-0d57-11e6-b37b-5a5a47e7b3b7, task_id = b6f484a6-0d57-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:37:27 Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:37:27 Set queue - OK, Queue: tst100web00 id = 134090ca-0d57-11e6-b37b-5a5a47e7b3b7, task_id = 13409c32-0d57-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:37:27 Update task - OK, id = 134090ca-0d57-11e6-b37b-5a5a47e7b3b7, task_id = 13409c32-0d57-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:37:27 Send message - OK, id = 134090ca-0d57-11e6-b37b-5a5a47e7b3b7, task_id = 13409c32-0d57-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:37:27 Decode from json - OK, Body: {"account":"megauser","address":"tst100-web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:37:27 Set queue - OK, Queue: tst100-web00 id = 7bffc528-0d56-11e6-b37b-5a5a47e7b3b7, task_id = 7bffd63a-0d56-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:37:27 Update task - OK, id = 7bffc528-0d56-11e6-b37b-5a5a47e7b3b7, task_id = 7bffd63a-0d56-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:37:27 Send message - OK, id = 7bffc528-0d56-11e6-b37b-5a5a47e7b3b7, task_id = 7bffd63a-0d56-11e6-b37b-5a5a47e7b3b7
+2016/04/29 10:37:27 Waiting for the signal
+2016/04/29 10:38:20 Get ready tasks - OK
+2016/04/29 10:38:20 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:38:20 Set queue - OK, Queue: tst100-web00 id = 5840d4f6-0ddd-11e6-926f-a63047e7b3b7, task_id = 5840e464-0ddd-11e6-926f-a63047e7b3b7
+2016/04/29 10:38:20 Update task - OK, id = 5840d4f6-0ddd-11e6-926f-a63047e7b3b7, task_id = 5840e464-0ddd-11e6-926f-a63047e7b3b7
+2016/04/29 10:38:20 Send message - OK, id = 5840d4f6-0ddd-11e6-926f-a63047e7b3b7, task_id = 5840e464-0ddd-11e6-926f-a63047e7b3b7
+2016/04/29 10:38:20 Waiting for the signal
+2016/04/29 10:43:44 Get ready tasks - OK
+2016/04/29 10:43:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:43:44 Set queue - OK, Queue: tst100-web00 id = 195c890a-0dde-11e6-926f-a63047e7b3b7, task_id = 195c95f8-0dde-11e6-926f-a63047e7b3b7
+2016/04/29 10:43:44 Update task - OK, id = 195c890a-0dde-11e6-926f-a63047e7b3b7, task_id = 195c95f8-0dde-11e6-926f-a63047e7b3b7
+2016/04/29 10:43:44 Send message - OK, id = 195c890a-0dde-11e6-926f-a63047e7b3b7, task_id = 195c95f8-0dde-11e6-926f-a63047e7b3b7
+2016/04/29 10:43:44 Waiting for the signal
+2016/04/29 10:58:22 Get ready tasks - OK
+2016/04/29 10:58:22 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 10:58:22 Set queue - OK, Queue: tst100-web00 id = 24f6dfc0-0de0-11e6-926f-a63047e7b3b7, task_id = 24f6e9b6-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 10:58:22 Update task - OK, id = 24f6dfc0-0de0-11e6-926f-a63047e7b3b7, task_id = 24f6e9b6-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 10:58:22 Send message - OK, id = 24f6dfc0-0de0-11e6-926f-a63047e7b3b7, task_id = 24f6e9b6-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 10:58:22 Waiting for the signal
+2016/04/29 10:59:47 Get ready tasks - OK
+2016/04/29 10:59:47 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 10:59:47 Set queue - OK, Queue: tst100-web00 id = 5779ffea-0de0-11e6-926f-a63047e7b3b7, task_id = 577a0c10-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 10:59:47 Update task - OK, id = 5779ffea-0de0-11e6-926f-a63047e7b3b7, task_id = 577a0c10-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 10:59:47 Send message - OK, id = 5779ffea-0de0-11e6-926f-a63047e7b3b7, task_id = 577a0c10-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 10:59:47 Waiting for the signal
+2016/04/29 11:01:21 Get ready tasks - OK
+2016/04/29 11:01:21 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:01:21 Set queue - OK, Queue: tst100-web00 id = 8f659fc2-0de0-11e6-926f-a63047e7b3b7, task_id = 8f65aa62-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 11:01:21 Update task - OK, id = 8f659fc2-0de0-11e6-926f-a63047e7b3b7, task_id = 8f65aa62-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 11:01:21 Send message - OK, id = 8f659fc2-0de0-11e6-926f-a63047e7b3b7, task_id = 8f65aa62-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 11:01:21 Waiting for the signal
+2016/04/29 11:01:55 Get ready tasks - OK
+2016/04/29 11:01:55 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:01:55 Set queue - OK, Queue: tst100-web00 id = a3d33d16-0de0-11e6-926f-a63047e7b3b7, task_id = a3d34c70-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 11:01:55 Update task - OK, id = a3d33d16-0de0-11e6-926f-a63047e7b3b7, task_id = a3d34c70-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 11:01:55 Send message - OK, id = a3d33d16-0de0-11e6-926f-a63047e7b3b7, task_id = a3d34c70-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 11:01:55 Waiting for the signal
+2016/04/29 11:02:48 Get ready tasks - OK
+2016/04/29 11:02:48 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:02:48 Set queue - OK, Queue: tst100-web00 id = c350ed0a-0de0-11e6-926f-a63047e7b3b7, task_id = c350fa34-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 11:02:48 Update task - OK, id = c350ed0a-0de0-11e6-926f-a63047e7b3b7, task_id = c350fa34-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 11:02:48 Send message - OK, id = c350ed0a-0de0-11e6-926f-a63047e7b3b7, task_id = c350fa34-0de0-11e6-926f-a63047e7b3b7
+2016/04/29 11:02:48 Waiting for the signal
+2016/04/29 11:04:50 Get ready tasks - OK
+2016/04/29 11:04:50 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:04:50 Set queue - OK, Queue: tst100-web00 id = 0c121050-0de1-11e6-926f-a63047e7b3b7, task_id = 0c12200e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:04:50 Update task - OK, id = 0c121050-0de1-11e6-926f-a63047e7b3b7, task_id = 0c12200e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:04:50 Send message - OK, id = 0c121050-0de1-11e6-926f-a63047e7b3b7, task_id = 0c12200e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:04:50 Waiting for the signal
+2016/04/29 11:06:15 Get ready tasks - OK
+2016/04/29 11:06:15 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:06:15 Set queue - OK, Queue: tst100-web00 id = 3ec04328-0de1-11e6-926f-a63047e7b3b7, task_id = 3ec04c7e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:06:15 Update task - OK, id = 3ec04328-0de1-11e6-926f-a63047e7b3b7, task_id = 3ec04c7e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:06:15 Send message - OK, id = 3ec04328-0de1-11e6-926f-a63047e7b3b7, task_id = 3ec04c7e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:06:15 Waiting for the signal
+2016/04/29 11:06:16 Get ready tasks - OK
+2016/04/29 11:06:16 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:06:16 Set queue - OK, Queue: tst100-web00 id = 3f678dcc-0de1-11e6-926f-a63047e7b3b7, task_id = 3f678e9e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:06:16 Update task - OK, id = 3f678dcc-0de1-11e6-926f-a63047e7b3b7, task_id = 3f678e9e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:06:16 Send message - OK, id = 3f678dcc-0de1-11e6-926f-a63047e7b3b7, task_id = 3f678e9e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:06:16 Waiting for the signal
+2016/04/29 11:07:19 Get ready tasks - OK
+2016/04/29 11:07:19 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:07:19 Set queue - OK, Queue: tst100-web00 id = 64ff9048-0de1-11e6-926f-a63047e7b3b7, task_id = 64ff9bec-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:07:19 Update task - OK, id = 64ff9048-0de1-11e6-926f-a63047e7b3b7, task_id = 64ff9bec-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:07:19 Send message - OK, id = 64ff9048-0de1-11e6-926f-a63047e7b3b7, task_id = 64ff9bec-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:07:19 Waiting for the signal
+2016/04/29 11:07:43 Get ready tasks - OK
+2016/04/29 11:07:43 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:07:43 Set queue - OK, Queue: tst100-web00 id = 730d2286-0de1-11e6-926f-a63047e7b3b7, task_id = 730d2bdc-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:07:43 Update task - OK, id = 730d2286-0de1-11e6-926f-a63047e7b3b7, task_id = 730d2bdc-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:07:43 Send message - OK, id = 730d2286-0de1-11e6-926f-a63047e7b3b7, task_id = 730d2bdc-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:07:43 Waiting for the signal
+2016/04/29 11:08:07 Get ready tasks - OK
+2016/04/29 11:08:07 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:08:07 Set queue - OK, Queue: tst100-web00 id = 81824832-0de1-11e6-926f-a63047e7b3b7, task_id = 8182521e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:08:07 Update task - OK, id = 81824832-0de1-11e6-926f-a63047e7b3b7, task_id = 8182521e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:08:07 Send message - OK, id = 81824832-0de1-11e6-926f-a63047e7b3b7, task_id = 8182521e-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:08:07 Waiting for the signal
+2016/04/29 11:08:52 Get ready tasks - OK
+2016/04/29 11:08:52 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:08:52 Set queue - OK, Queue: tst100-web00 id = 9ca7b3e0-0de1-11e6-926f-a63047e7b3b7, task_id = 9ca7c038-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:08:52 Update task - OK, id = 9ca7b3e0-0de1-11e6-926f-a63047e7b3b7, task_id = 9ca7c038-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:08:52 Send message - OK, id = 9ca7b3e0-0de1-11e6-926f-a63047e7b3b7, task_id = 9ca7c038-0de1-11e6-926f-a63047e7b3b7
+2016/04/29 11:08:52 Waiting for the signal
+2016/04/29 11:11:48 Get ready tasks - OK
+2016/04/29 11:11:48 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:11:48 Set queue - OK, Queue: tst100-web00 id = 05747d40-0de2-11e6-926f-a63047e7b3b7, task_id = 0574915e-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:11:48 Update task - OK, id = 05747d40-0de2-11e6-926f-a63047e7b3b7, task_id = 0574915e-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:11:48 Send message - OK, id = 05747d40-0de2-11e6-926f-a63047e7b3b7, task_id = 0574915e-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:11:48 Waiting for the signal
+2016/04/29 11:13:51 Get ready tasks - OK
+2016/04/29 11:13:51 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:13:51 Set queue - OK, Queue: tst100-web00 id = 4ed5ca3e-0de2-11e6-926f-a63047e7b3b7, task_id = 4ed5d56a-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:13:51 Update task - OK, id = 4ed5ca3e-0de2-11e6-926f-a63047e7b3b7, task_id = 4ed5d56a-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:13:51 Send message - OK, id = 4ed5ca3e-0de2-11e6-926f-a63047e7b3b7, task_id = 4ed5d56a-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:13:51 Waiting for the signal
+2016/04/29 11:15:16 Get ready tasks - OK
+2016/04/29 11:15:16 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:15:16 Set queue - OK, Queue: tst100-web00 id = 816eb2bc-0de2-11e6-926f-a63047e7b3b7, task_id = 816ebcd0-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:15:16 Update task - OK, id = 816eb2bc-0de2-11e6-926f-a63047e7b3b7, task_id = 816ebcd0-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:15:16 Send message - OK, id = 816eb2bc-0de2-11e6-926f-a63047e7b3b7, task_id = 816ebcd0-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:15:16 Waiting for the signal
+2016/04/29 11:17:26 Get ready tasks - OK
+2016/04/29 11:17:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:17:26 Set queue - OK, Queue: tst100-web00 id = cea890a2-0de2-11e6-926f-a63047e7b3b7, task_id = cea89c3c-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:17:26 Update task - OK, id = cea890a2-0de2-11e6-926f-a63047e7b3b7, task_id = cea89c3c-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:17:26 Send message - OK, id = cea890a2-0de2-11e6-926f-a63047e7b3b7, task_id = cea89c3c-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:17:26 Waiting for the signal
+2016/04/29 11:18:06 Get ready tasks - OK
+2016/04/29 11:18:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:18:06 Set queue - OK, Queue: tst100-web00 id = e67ba0ca-0de2-11e6-926f-a63047e7b3b7, task_id = e67bab42-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:18:06 Update task - OK, id = e67ba0ca-0de2-11e6-926f-a63047e7b3b7, task_id = e67bab42-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:18:06 Send message - OK, id = e67ba0ca-0de2-11e6-926f-a63047e7b3b7, task_id = e67bab42-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:18:06 Waiting for the signal
+2016/04/29 11:18:31 Get ready tasks - OK
+2016/04/29 11:18:31 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:18:31 Set queue - OK, Queue: tst100-web00 id = f58fbad8-0de2-11e6-926f-a63047e7b3b7, task_id = f58fc546-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:18:31 Update task - OK, id = f58fbad8-0de2-11e6-926f-a63047e7b3b7, task_id = f58fc546-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:18:31 Send message - OK, id = f58fbad8-0de2-11e6-926f-a63047e7b3b7, task_id = f58fc546-0de2-11e6-926f-a63047e7b3b7
+2016/04/29 11:18:31 Waiting for the signal
+2016/04/29 11:19:31 Get ready tasks - OK
+2016/04/29 11:19:31 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:19:31 Set queue - OK, Queue: tst100-web00 id = 19615282-0de3-11e6-926f-a63047e7b3b7, task_id = 19615ca0-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:19:31 Update task - OK, id = 19615282-0de3-11e6-926f-a63047e7b3b7, task_id = 19615ca0-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:19:31 Send message - OK, id = 19615282-0de3-11e6-926f-a63047e7b3b7, task_id = 19615ca0-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:19:31 Waiting for the signal
+2016/04/29 11:20:35 Get ready tasks - OK
+2016/04/29 11:20:35 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:20:36 Set queue - OK, Queue: tst100-web00 id = 3d69c9a2-0de3-11e6-926f-a63047e7b3b7, task_id = 3d69e86a-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:20:36 Update task - OK, id = 3d69c9a2-0de3-11e6-926f-a63047e7b3b7, task_id = 3d69e86a-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:20:36 Send message - OK, id = 3d69c9a2-0de3-11e6-926f-a63047e7b3b7, task_id = 3d69e86a-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:20:36 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:20:36 Set queue - OK, Queue: tst100-web00 id = 3e51ec0a-0de3-11e6-926f-a63047e7b3b7, task_id = 3e51ed4a-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:20:36 Update task - OK, id = 3e51ec0a-0de3-11e6-926f-a63047e7b3b7, task_id = 3e51ed4a-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:20:36 Send message - OK, id = 3e51ec0a-0de3-11e6-926f-a63047e7b3b7, task_id = 3e51ed4a-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:20:36 Waiting for the signal
+2016/04/29 11:20:36 Get ready tasks - OK
+2016/04/29 11:20:36 Waiting for the signal
+2016/04/29 11:21:20 Get ready tasks - OK
+2016/04/29 11:21:20 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:21:20 Set queue - OK, Queue: tst100-web00 id = 5a3d344c-0de3-11e6-926f-a63047e7b3b7, task_id = 5a3d4004-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:21:20 Update task - OK, id = 5a3d344c-0de3-11e6-926f-a63047e7b3b7, task_id = 5a3d4004-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:21:20 Send message - OK, id = 5a3d344c-0de3-11e6-926f-a63047e7b3b7, task_id = 5a3d4004-0de3-11e6-926f-a63047e7b3b7
+2016/04/29 11:21:20 Waiting for the signal
+2016/04/29 11:30:25 Get ready tasks - OK
+2016/04/29 11:30:25 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:30:25 Set queue - OK, Queue: tst100-web00 id = 9f59e876-0de4-11e6-926f-a63047e7b3b7, task_id = 9f59f4d8-0de4-11e6-926f-a63047e7b3b7
+2016/04/29 11:30:26 Update task - OK, id = 9f59e876-0de4-11e6-926f-a63047e7b3b7, task_id = 9f59f4d8-0de4-11e6-926f-a63047e7b3b7
+2016/04/29 11:30:26 Send message - OK, id = 9f59e876-0de4-11e6-926f-a63047e7b3b7, task_id = 9f59f4d8-0de4-11e6-926f-a63047e7b3b7
+2016/04/29 11:30:26 Waiting for the signal
+2016/04/29 11:31:12 Get ready tasks - OK
+2016/04/29 11:31:12 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:31:12 Set queue - OK, Queue: tst100-web00 id = baec62da-0de4-11e6-926f-a63047e7b3b7, task_id = baec79b4-0de4-11e6-926f-a63047e7b3b7
+2016/04/29 11:31:12 Update task - OK, id = baec62da-0de4-11e6-926f-a63047e7b3b7, task_id = baec79b4-0de4-11e6-926f-a63047e7b3b7
+2016/04/29 11:31:12 Send message - OK, id = baec62da-0de4-11e6-926f-a63047e7b3b7, task_id = baec79b4-0de4-11e6-926f-a63047e7b3b7
+2016/04/29 11:31:12 Waiting for the signal
+2016/04/29 11:31:58 Get ready tasks - OK
+2016/04/29 11:31:58 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:31:58 Set queue - OK, Queue: tst100-web00 id = d682bf58-0de4-11e6-926f-a63047e7b3b7, task_id = d682cae8-0de4-11e6-926f-a63047e7b3b7
+2016/04/29 11:31:58 Update task - OK, id = d682bf58-0de4-11e6-926f-a63047e7b3b7, task_id = d682cae8-0de4-11e6-926f-a63047e7b3b7
+2016/04/29 11:31:58 Send message - OK, id = d682bf58-0de4-11e6-926f-a63047e7b3b7, task_id = d682cae8-0de4-11e6-926f-a63047e7b3b7
+2016/04/29 11:31:58 Waiting for the signal
+2016/04/29 11:43:06 Get ready tasks - OK
+2016/04/29 11:43:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:43:06 Set queue - OK, Queue: tst100-web00 id = 64b752ba-0de6-11e6-926f-a63047e7b3b7, task_id = 64b75eae-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:43:06 Update task - OK, id = 64b752ba-0de6-11e6-926f-a63047e7b3b7, task_id = 64b75eae-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:43:06 Send message - OK, id = 64b752ba-0de6-11e6-926f-a63047e7b3b7, task_id = 64b75eae-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:43:06 Waiting for the signal
+2016/04/29 11:43:28 Get ready tasks - OK
+2016/04/29 11:43:28 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:43:28 Set queue - OK, Queue: tst100-web00 id = 71cb5668-0de6-11e6-926f-a63047e7b3b7, task_id = 71cb5fb4-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:43:28 Update task - OK, id = 71cb5668-0de6-11e6-926f-a63047e7b3b7, task_id = 71cb5fb4-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:43:28 Send message - OK, id = 71cb5668-0de6-11e6-926f-a63047e7b3b7, task_id = 71cb5fb4-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:43:28 Waiting for the signal
+2016/04/29 11:43:57 Get ready tasks - OK
+2016/04/29 11:43:57 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:43:57 Set queue - OK, Queue: tst100-web00 id = 8308528c-0de6-11e6-926f-a63047e7b3b7, task_id = 83085d7c-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:43:57 Update task - OK, id = 8308528c-0de6-11e6-926f-a63047e7b3b7, task_id = 83085d7c-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:43:57 Send message - OK, id = 8308528c-0de6-11e6-926f-a63047e7b3b7, task_id = 83085d7c-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:43:57 Waiting for the signal
+2016/04/29 11:44:43 Get ready tasks - OK
+2016/04/29 11:44:43 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:44:43 Set queue - OK, Queue: tst100-web00 id = 9e64eb4e-0de6-11e6-926f-a63047e7b3b7, task_id = 9e64fa26-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:44:43 Update task - OK, id = 9e64eb4e-0de6-11e6-926f-a63047e7b3b7, task_id = 9e64fa26-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:44:43 Send message - OK, id = 9e64eb4e-0de6-11e6-926f-a63047e7b3b7, task_id = 9e64fa26-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:44:43 Waiting for the signal
+2016/04/29 11:45:00 Get ready tasks - OK
+2016/04/29 11:45:00 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:45:00 Set queue - OK, Queue: tst100-web00 id = a8c0e110-0de6-11e6-926f-a63047e7b3b7, task_id = a8c0ead4-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:45:00 Update task - OK, id = a8c0e110-0de6-11e6-926f-a63047e7b3b7, task_id = a8c0ead4-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:45:00 Send message - OK, id = a8c0e110-0de6-11e6-926f-a63047e7b3b7, task_id = a8c0ead4-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:45:00 Waiting for the signal
+2016/04/29 11:45:09 Get ready tasks - OK
+2016/04/29 11:45:09 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:45:09 Set queue - OK, Queue: tst100-web00 id = ae049324-0de6-11e6-926f-a63047e7b3b7, task_id = ae0493ba-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:45:09 Update task - OK, id = ae049324-0de6-11e6-926f-a63047e7b3b7, task_id = ae0493ba-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:45:09 Send message - OK, id = ae049324-0de6-11e6-926f-a63047e7b3b7, task_id = ae0493ba-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:45:09 Waiting for the signal
+2016/04/29 11:45:49 Get ready tasks - OK
+2016/04/29 11:45:49 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:45:49 Set queue - OK, Queue: tst100-web00 id = c61cbc66-0de6-11e6-926f-a63047e7b3b7, task_id = c61cc79c-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:45:49 Update task - OK, id = c61cbc66-0de6-11e6-926f-a63047e7b3b7, task_id = c61cc79c-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:45:49 Send message - OK, id = c61cbc66-0de6-11e6-926f-a63047e7b3b7, task_id = c61cc79c-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:45:49 Waiting for the signal
+2016/04/29 11:47:14 Get ready tasks - OK
+2016/04/29 11:47:14 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:47:14 Set queue - OK, Queue: tst100-web00 id = f864e0e0-0de6-11e6-926f-a63047e7b3b7, task_id = f864edf6-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:47:14 Update task - OK, id = f864e0e0-0de6-11e6-926f-a63047e7b3b7, task_id = f864edf6-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:47:14 Send message - OK, id = f864e0e0-0de6-11e6-926f-a63047e7b3b7, task_id = f864edf6-0de6-11e6-926f-a63047e7b3b7
+2016/04/29 11:47:14 Waiting for the signal
+2016/04/29 11:47:44 Get ready tasks - OK
+2016/04/29 11:47:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:47:44 Set queue - OK, Queue: tst100-web00 id = 0ab0f356-0de7-11e6-926f-a63047e7b3b7, task_id = 0ab0fc5c-0de7-11e6-926f-a63047e7b3b7
+2016/04/29 11:47:44 Update task - OK, id = 0ab0f356-0de7-11e6-926f-a63047e7b3b7, task_id = 0ab0fc5c-0de7-11e6-926f-a63047e7b3b7
+2016/04/29 11:47:44 Send message - OK, id = 0ab0f356-0de7-11e6-926f-a63047e7b3b7, task_id = 0ab0fc5c-0de7-11e6-926f-a63047e7b3b7
+2016/04/29 11:47:44 Waiting for the signal
+2016/04/29 11:48:53 Get ready tasks - OK
+2016/04/29 11:48:53 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:53 Set queue - OK, Queue: tst100-web00 id = 33300420-0de7-11e6-926f-a63047e7b3b7, task_id = 333011f4-0de7-11e6-926f-a63047e7b3b7
+2016/04/29 11:48:53 Update task - OK, id = 33300420-0de7-11e6-926f-a63047e7b3b7, task_id = 333011f4-0de7-11e6-926f-a63047e7b3b7
+2016/04/29 11:48:53 Send message - OK, id = 33300420-0de7-11e6-926f-a63047e7b3b7, task_id = 333011f4-0de7-11e6-926f-a63047e7b3b7
+2016/04/29 11:48:53 Waiting for the signal
+2016/04/29 11:49:37 Get ready tasks - OK
+2016/04/29 11:49:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:49:37 Set queue - OK, Queue: tst100-web00 id = 4e0c1aa4-0de7-11e6-926f-a63047e7b3b7, task_id = 4e0c2440-0de7-11e6-926f-a63047e7b3b7
+2016/04/29 11:49:37 Update task - OK, id = 4e0c1aa4-0de7-11e6-926f-a63047e7b3b7, task_id = 4e0c2440-0de7-11e6-926f-a63047e7b3b7
+2016/04/29 11:49:37 Send message - OK, id = 4e0c1aa4-0de7-11e6-926f-a63047e7b3b7, task_id = 4e0c2440-0de7-11e6-926f-a63047e7b3b7
+2016/04/29 11:49:37 Waiting for the signal
+2016/04/29 14:27:49 Get ready tasks - OK
+2016/04/29 14:27:49 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:27:49 Set queue - OK, Queue: tst100-web00 id = 674cbf58-0dfd-11e6-926f-a63047e7b3b7, task_id = 674cca84-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:27:49 Update task - OK, id = 674cbf58-0dfd-11e6-926f-a63047e7b3b7, task_id = 674cca84-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:27:49 Send message - OK, id = 674cbf58-0dfd-11e6-926f-a63047e7b3b7, task_id = 674cca84-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:27:49 Waiting for the signal
+2016/04/29 14:28:45 Get ready tasks - OK
+2016/04/29 14:28:45 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:28:45 Set queue - OK, Queue: tst100-web00 id = 890c8c68-0dfd-11e6-926f-a63047e7b3b7, task_id = 890ca374-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:28:45 Update task - OK, id = 890c8c68-0dfd-11e6-926f-a63047e7b3b7, task_id = 890ca374-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:28:45 Send message - OK, id = 890c8c68-0dfd-11e6-926f-a63047e7b3b7, task_id = 890ca374-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:28:45 Waiting for the signal
+2016/04/29 14:30:33 Get ready tasks - OK
+2016/04/29 14:30:33 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:30:33 Set queue - OK, Queue: tst100-web00 id = c94c68b6-0dfd-11e6-926f-a63047e7b3b7, task_id = c94c7310-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:30:33 Update task - OK, id = c94c68b6-0dfd-11e6-926f-a63047e7b3b7, task_id = c94c7310-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:30:33 Send message - OK, id = c94c68b6-0dfd-11e6-926f-a63047e7b3b7, task_id = c94c7310-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:30:33 Waiting for the signal
+2016/04/29 14:30:57 Get ready tasks - OK
+2016/04/29 14:30:57 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:30:57 Set queue - OK, Queue: tst100-web00 id = d77f9340-0dfd-11e6-926f-a63047e7b3b7, task_id = d77fde40-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:30:57 Update task - OK, id = d77f9340-0dfd-11e6-926f-a63047e7b3b7, task_id = d77fde40-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:30:57 Send message - OK, id = d77f9340-0dfd-11e6-926f-a63047e7b3b7, task_id = d77fde40-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:30:57 Waiting for the signal
+2016/04/29 14:31:26 Get ready tasks - OK
+2016/04/29 14:31:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:31:26 Set queue - OK, Queue: tst100-web00 id = e8a65334-0dfd-11e6-926f-a63047e7b3b7, task_id = e8a668d8-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:31:26 Update task - OK, id = e8a65334-0dfd-11e6-926f-a63047e7b3b7, task_id = e8a668d8-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:31:26 Send message - OK, id = e8a65334-0dfd-11e6-926f-a63047e7b3b7, task_id = e8a668d8-0dfd-11e6-926f-a63047e7b3b7
+2016/04/29 14:31:26 Waiting for the signal
+2016/04/29 14:33:39 Get ready tasks - OK
+2016/04/29 14:33:39 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:33:39 Set queue - OK, Queue: tst100-web00 id = 37ce052e-0dfe-11e6-926f-a63047e7b3b7, task_id = 37ce1140-0dfe-11e6-926f-a63047e7b3b7
+2016/04/29 14:33:39 Update task - OK, id = 37ce052e-0dfe-11e6-926f-a63047e7b3b7, task_id = 37ce1140-0dfe-11e6-926f-a63047e7b3b7
+2016/04/29 14:33:39 Send message - OK, id = 37ce052e-0dfe-11e6-926f-a63047e7b3b7, task_id = 37ce1140-0dfe-11e6-926f-a63047e7b3b7
+2016/04/29 14:33:39 Waiting for the signal
+2016/04/29 14:34:10 Get ready tasks - OK
+2016/04/29 14:34:10 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:34:10 Set queue - OK, Queue: tst100-web00 id = 4aa4e35c-0dfe-11e6-926f-a63047e7b3b7, task_id = 4aa4efa0-0dfe-11e6-926f-a63047e7b3b7
+2016/04/29 14:34:10 Update task - OK, id = 4aa4e35c-0dfe-11e6-926f-a63047e7b3b7, task_id = 4aa4efa0-0dfe-11e6-926f-a63047e7b3b7
+2016/04/29 14:34:10 Send message - OK, id = 4aa4e35c-0dfe-11e6-926f-a63047e7b3b7, task_id = 4aa4efa0-0dfe-11e6-926f-a63047e7b3b7
+2016/04/29 14:34:10 Waiting for the signal
+2016/04/29 14:47:37 Get ready tasks - OK
+2016/04/29 14:47:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:47:37 Set queue - OK, Queue: tst100-web00 id = 2bc6c7e6-0e00-11e6-926f-a63047e7b3b7, task_id = 2bc6d43e-0e00-11e6-926f-a63047e7b3b7
+2016/04/29 14:47:37 Update task - OK, id = 2bc6c7e6-0e00-11e6-926f-a63047e7b3b7, task_id = 2bc6d43e-0e00-11e6-926f-a63047e7b3b7
+2016/04/29 14:47:37 Send message - OK, id = 2bc6c7e6-0e00-11e6-926f-a63047e7b3b7, task_id = 2bc6d43e-0e00-11e6-926f-a63047e7b3b7
+2016/04/29 14:47:37 Waiting for the signal
+2016/04/29 15:29:15 Get ready tasks - OK
+2016/04/29 15:29:15 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:29:15 Set queue - OK, Queue: tst100-web00 id = fc6fa156-0e05-11e6-926f-a63047e7b3b7, task_id = fc6fb72c-0e05-11e6-926f-a63047e7b3b7
+2016/04/29 15:29:15 Update task - OK, id = fc6fa156-0e05-11e6-926f-a63047e7b3b7, task_id = fc6fb72c-0e05-11e6-926f-a63047e7b3b7
+2016/04/29 15:29:15 Send message - OK, id = fc6fa156-0e05-11e6-926f-a63047e7b3b7, task_id = fc6fb72c-0e05-11e6-926f-a63047e7b3b7
+2016/04/29 15:29:15 Waiting for the signal
+2016/04/29 15:48:00 Get ready tasks - OK
+2016/04/29 15:48:00 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:48:00 Set queue - OK, Queue: tst100-web00 id = 9ad65e8c-0e08-11e6-926f-a63047e7b3b7, task_id = 9ad68718-0e08-11e6-926f-a63047e7b3b7
+2016/04/29 15:48:00 Update task - OK, id = 9ad65e8c-0e08-11e6-926f-a63047e7b3b7, task_id = 9ad68718-0e08-11e6-926f-a63047e7b3b7
+2016/04/29 15:48:00 Send message - OK, id = 9ad65e8c-0e08-11e6-926f-a63047e7b3b7, task_id = 9ad68718-0e08-11e6-926f-a63047e7b3b7
+2016/04/29 15:48:00 Waiting for the signal
+2016/04/29 15:57:50 Get ready tasks - OK
+2016/04/29 15:57:50 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:57:50 Set queue - OK, Queue: tst100-web01 id = fa6bf2de-0e09-11e6-926f-a63047e7b3b7, task_id = fa6c0e7c-0e09-11e6-926f-a63047e7b3b7
+2016/04/29 15:57:50 Update task - OK, id = fa6bf2de-0e09-11e6-926f-a63047e7b3b7, task_id = fa6c0e7c-0e09-11e6-926f-a63047e7b3b7
+2016/04/29 15:57:50 Send message - OK, id = fa6bf2de-0e09-11e6-926f-a63047e7b3b7, task_id = fa6c0e7c-0e09-11e6-926f-a63047e7b3b7
+2016/04/29 15:57:50 Waiting for the signal
+2016/04/29 15:58:06 Get ready tasks - OK
+2016/04/29 15:58:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:06 Set queue - OK, Queue: tst100-web00 id = 041ff1fe-0e0a-11e6-926f-a63047e7b3b7, task_id = 041ffd5c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:06 Update task - OK, id = 041ff1fe-0e0a-11e6-926f-a63047e7b3b7, task_id = 041ffd5c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:06 Send message - OK, id = 041ff1fe-0e0a-11e6-926f-a63047e7b3b7, task_id = 041ffd5c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:06 Waiting for the signal
+2016/04/29 15:58:36 Get ready tasks - OK
+2016/04/29 15:58:36 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:36 Set queue - OK, Queue: tst100-web00 id = 16217a12-0e0a-11e6-926f-a63047e7b3b7, task_id = 1621858e-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:36 Update task - OK, id = 16217a12-0e0a-11e6-926f-a63047e7b3b7, task_id = 1621858e-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:36 Send message - OK, id = 16217a12-0e0a-11e6-926f-a63047e7b3b7, task_id = 1621858e-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:36 Waiting for the signal
+2016/04/29 15:58:36 Get ready tasks - OK
+2016/04/29 15:58:36 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:36 Set queue - OK, Queue: tst100-web00 id = 163d6556-0e0a-11e6-926f-a63047e7b3b7, task_id = 163d65ec-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:36 Update task - OK, id = 163d6556-0e0a-11e6-926f-a63047e7b3b7, task_id = 163d65ec-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:36 Send message - OK, id = 163d6556-0e0a-11e6-926f-a63047e7b3b7, task_id = 163d65ec-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:36 Waiting for the signal
+2016/04/29 15:58:36 Get ready tasks - OK
+2016/04/29 15:58:36 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:36 Set queue - OK, Queue: tst100-web00 id = 1657a8bc-0e0a-11e6-926f-a63047e7b3b7, task_id = 1657a95c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:36 Update task - OK, id = 1657a8bc-0e0a-11e6-926f-a63047e7b3b7, task_id = 1657a95c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:36 Send message - OK, id = 1657a8bc-0e0a-11e6-926f-a63047e7b3b7, task_id = 1657a95c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:36 Waiting for the signal
+2016/04/29 15:58:37 Get ready tasks - OK
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Set queue - OK, Queue: tst100-web00 id = 16722dc2-0e0a-11e6-926f-a63047e7b3b7, task_id = 16722f48-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Update task - OK, id = 16722dc2-0e0a-11e6-926f-a63047e7b3b7, task_id = 16722f48-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Send message - OK, id = 16722dc2-0e0a-11e6-926f-a63047e7b3b7, task_id = 16722f48-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Waiting for the signal
+2016/04/29 15:58:37 Get ready tasks - OK
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Set queue - OK, Queue: tst100-web00 id = 168dc12c-0e0a-11e6-926f-a63047e7b3b7, task_id = 168dc1a4-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Update task - OK, id = 168dc12c-0e0a-11e6-926f-a63047e7b3b7, task_id = 168dc1a4-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Send message - OK, id = 168dc12c-0e0a-11e6-926f-a63047e7b3b7, task_id = 168dc1a4-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Waiting for the signal
+2016/04/29 15:58:37 Get ready tasks - OK
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Set queue - OK, Queue: tst100-web00 id = 16a8af1e-0e0a-11e6-926f-a63047e7b3b7, task_id = 16a8afe6-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Update task - OK, id = 16a8af1e-0e0a-11e6-926f-a63047e7b3b7, task_id = 16a8afe6-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Send message - OK, id = 16a8af1e-0e0a-11e6-926f-a63047e7b3b7, task_id = 16a8afe6-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Waiting for the signal
+2016/04/29 15:58:37 Get ready tasks - OK
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Set queue - OK, Queue: tst100-web00 id = 16c6a32a-0e0a-11e6-926f-a63047e7b3b7, task_id = 16c6a5b4-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Update task - OK, id = 16c6a32a-0e0a-11e6-926f-a63047e7b3b7, task_id = 16c6a5b4-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Send message - OK, id = 16c6a32a-0e0a-11e6-926f-a63047e7b3b7, task_id = 16c6a5b4-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Waiting for the signal
+2016/04/29 15:58:37 Get ready tasks - OK
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Set queue - OK, Queue: tst100-web00 id = 16e456d6-0e0a-11e6-926f-a63047e7b3b7, task_id = 16e45776-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Update task - OK, id = 16e456d6-0e0a-11e6-926f-a63047e7b3b7, task_id = 16e45776-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Send message - OK, id = 16e456d6-0e0a-11e6-926f-a63047e7b3b7, task_id = 16e45776-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Waiting for the signal
+2016/04/29 15:58:37 Get ready tasks - OK
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Set queue - OK, Queue: tst100-web00 id = 16fd137e-0e0a-11e6-926f-a63047e7b3b7, task_id = 16fd1400-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Update task - OK, id = 16fd137e-0e0a-11e6-926f-a63047e7b3b7, task_id = 16fd1400-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Send message - OK, id = 16fd137e-0e0a-11e6-926f-a63047e7b3b7, task_id = 16fd1400-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:37 Waiting for the signal
+2016/04/29 15:58:38 Get ready tasks - OK
+2016/04/29 15:58:38 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:38 Set queue - OK, Queue: tst100-web00 id = 17189c16-0e0a-11e6-926f-a63047e7b3b7, task_id = 17189ca2-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:38 Update task - OK, id = 17189c16-0e0a-11e6-926f-a63047e7b3b7, task_id = 17189ca2-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:38 Send message - OK, id = 17189c16-0e0a-11e6-926f-a63047e7b3b7, task_id = 17189ca2-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:38 Waiting for the signal
+2016/04/29 15:58:38 Get ready tasks - OK
+2016/04/29 15:58:38 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:38 Set queue - OK, Queue: tst100-web00 id = 1737e134-0e0a-11e6-926f-a63047e7b3b7, task_id = 1737e1d4-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:38 Update task - OK, id = 1737e134-0e0a-11e6-926f-a63047e7b3b7, task_id = 1737e1d4-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:38 Send message - OK, id = 1737e134-0e0a-11e6-926f-a63047e7b3b7, task_id = 1737e1d4-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:38 Waiting for the signal
+2016/04/29 15:58:53 Get ready tasks - OK
+2016/04/29 15:58:53 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Set queue - OK, Queue: tst100-web01 id = 203ab3a6-0e0a-11e6-926f-a63047e7b3b7, task_id = 203abcb6-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Update task - OK, id = 203ab3a6-0e0a-11e6-926f-a63047e7b3b7, task_id = 203abcb6-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Send message - OK, id = 203ab3a6-0e0a-11e6-926f-a63047e7b3b7, task_id = 203abcb6-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Waiting for the signal
+2016/04/29 15:58:53 Get ready tasks - OK
+2016/04/29 15:58:53 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Set queue - OK, Queue: tst100-web01 id = 2053e0e2-0e0a-11e6-926f-a63047e7b3b7, task_id = 2053e16e-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Update task - OK, id = 2053e0e2-0e0a-11e6-926f-a63047e7b3b7, task_id = 2053e16e-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Send message - OK, id = 2053e0e2-0e0a-11e6-926f-a63047e7b3b7, task_id = 2053e16e-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Waiting for the signal
+2016/04/29 15:58:53 Get ready tasks - OK
+2016/04/29 15:58:53 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Set queue - OK, Queue: tst100-web01 id = 206f323e-0e0a-11e6-926f-a63047e7b3b7, task_id = 206f32ca-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Update task - OK, id = 206f323e-0e0a-11e6-926f-a63047e7b3b7, task_id = 206f32ca-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Send message - OK, id = 206f323e-0e0a-11e6-926f-a63047e7b3b7, task_id = 206f32ca-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Waiting for the signal
+2016/04/29 15:58:53 Get ready tasks - OK
+2016/04/29 15:58:53 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Set queue - OK, Queue: tst100-web01 id = 208762e6-0e0a-11e6-926f-a63047e7b3b7, task_id = 208763ea-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Update task - OK, id = 208762e6-0e0a-11e6-926f-a63047e7b3b7, task_id = 208763ea-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Send message - OK, id = 208762e6-0e0a-11e6-926f-a63047e7b3b7, task_id = 208763ea-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:53 Waiting for the signal
+2016/04/29 15:58:54 Get ready tasks - OK
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Set queue - OK, Queue: tst100-web01 id = 20a0e536-0e0a-11e6-926f-a63047e7b3b7, task_id = 20a0e608-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Update task - OK, id = 20a0e536-0e0a-11e6-926f-a63047e7b3b7, task_id = 20a0e608-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Send message - OK, id = 20a0e536-0e0a-11e6-926f-a63047e7b3b7, task_id = 20a0e608-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Waiting for the signal
+2016/04/29 15:58:54 Get ready tasks - OK
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Set queue - OK, Queue: tst100-web01 id = 20b9f80a-0e0a-11e6-926f-a63047e7b3b7, task_id = 20b9f8aa-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Update task - OK, id = 20b9f80a-0e0a-11e6-926f-a63047e7b3b7, task_id = 20b9f8aa-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Send message - OK, id = 20b9f80a-0e0a-11e6-926f-a63047e7b3b7, task_id = 20b9f8aa-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Waiting for the signal
+2016/04/29 15:58:54 Get ready tasks - OK
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Set queue - OK, Queue: tst100-web01 id = 20d6584c-0e0a-11e6-926f-a63047e7b3b7, task_id = 20d65a0e-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Update task - OK, id = 20d6584c-0e0a-11e6-926f-a63047e7b3b7, task_id = 20d65a0e-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Send message - OK, id = 20d6584c-0e0a-11e6-926f-a63047e7b3b7, task_id = 20d65a0e-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Waiting for the signal
+2016/04/29 15:58:54 Get ready tasks - OK
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Set queue - OK, Queue: tst100-web01 id = 20ee8926-0e0a-11e6-926f-a63047e7b3b7, task_id = 20ee89da-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Update task - OK, id = 20ee8926-0e0a-11e6-926f-a63047e7b3b7, task_id = 20ee89da-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Send message - OK, id = 20ee8926-0e0a-11e6-926f-a63047e7b3b7, task_id = 20ee89da-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Waiting for the signal
+2016/04/29 15:58:54 Get ready tasks - OK
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Set queue - OK, Queue: tst100-web01 id = 2109f800-0e0a-11e6-926f-a63047e7b3b7, task_id = 2109f896-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Update task - OK, id = 2109f800-0e0a-11e6-926f-a63047e7b3b7, task_id = 2109f896-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Send message - OK, id = 2109f800-0e0a-11e6-926f-a63047e7b3b7, task_id = 2109f896-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Waiting for the signal
+2016/04/29 15:58:54 Get ready tasks - OK
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Set queue - OK, Queue: tst100-web01 id = 21221cdc-0e0a-11e6-926f-a63047e7b3b7, task_id = 21221d86-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Update task - OK, id = 21221cdc-0e0a-11e6-926f-a63047e7b3b7, task_id = 21221d86-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Send message - OK, id = 21221cdc-0e0a-11e6-926f-a63047e7b3b7, task_id = 21221d86-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:54 Waiting for the signal
+2016/04/29 15:58:55 Get ready tasks - OK
+2016/04/29 15:58:55 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:55 Set queue - OK, Queue: tst100-web01 id = 213fd510-0e0a-11e6-926f-a63047e7b3b7, task_id = 213fd5ce-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:55 Update task - OK, id = 213fd510-0e0a-11e6-926f-a63047e7b3b7, task_id = 213fd5ce-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:55 Send message - OK, id = 213fd510-0e0a-11e6-926f-a63047e7b3b7, task_id = 213fd5ce-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:55 Waiting for the signal
+2016/04/29 15:58:55 Get ready tasks - OK
+2016/04/29 15:58:55 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:55 Set queue - OK, Queue: tst100-web01 id = 215858ba-0e0a-11e6-926f-a63047e7b3b7, task_id = 21585946-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:55 Update task - OK, id = 215858ba-0e0a-11e6-926f-a63047e7b3b7, task_id = 21585946-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:55 Send message - OK, id = 215858ba-0e0a-11e6-926f-a63047e7b3b7, task_id = 21585946-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:55 Waiting for the signal
+2016/04/29 15:58:55 Get ready tasks - OK
+2016/04/29 15:58:55 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:55 Set queue - OK, Queue: tst100-web01 id = 217855d4-0e0a-11e6-926f-a63047e7b3b7, task_id = 2178566a-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:55 Update task - OK, id = 217855d4-0e0a-11e6-926f-a63047e7b3b7, task_id = 2178566a-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:55 Send message - OK, id = 217855d4-0e0a-11e6-926f-a63047e7b3b7, task_id = 2178566a-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 15:58:55 Waiting for the signal
+2016/04/29 16:01:04 Get ready tasks - OK
+2016/04/29 16:01:04 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:04 Set queue - OK, Queue: tst100-web01 id = 6e83a018-0e0a-11e6-926f-a63047e7b3b7, task_id = 6e83b56c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:04 Update task - OK, id = 6e83a018-0e0a-11e6-926f-a63047e7b3b7, task_id = 6e83b56c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:04 Send message - OK, id = 6e83a018-0e0a-11e6-926f-a63047e7b3b7, task_id = 6e83b56c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:04 Waiting for the signal
+2016/04/29 16:01:04 Get ready tasks - OK
+2016/04/29 16:01:04 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:04 Set queue - OK, Queue: tst100-web01 id = 6e9bf91a-0e0a-11e6-926f-a63047e7b3b7, task_id = 6e9bf9ba-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:04 Update task - OK, id = 6e9bf91a-0e0a-11e6-926f-a63047e7b3b7, task_id = 6e9bf9ba-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:04 Send message - OK, id = 6e9bf91a-0e0a-11e6-926f-a63047e7b3b7, task_id = 6e9bf9ba-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:04 Waiting for the signal
+2016/04/29 16:01:05 Get ready tasks - OK
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Set queue - OK, Queue: tst100-web01 id = 6eb5ab44-0e0a-11e6-926f-a63047e7b3b7, task_id = 6eb5ac20-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Update task - OK, id = 6eb5ab44-0e0a-11e6-926f-a63047e7b3b7, task_id = 6eb5ac20-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Send message - OK, id = 6eb5ab44-0e0a-11e6-926f-a63047e7b3b7, task_id = 6eb5ac20-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Waiting for the signal
+2016/04/29 16:01:05 Get ready tasks - OK
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Set queue - OK, Queue: tst100-web01 id = 6ed1539e-0e0a-11e6-926f-a63047e7b3b7, task_id = 6ed15448-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Update task - OK, id = 6ed1539e-0e0a-11e6-926f-a63047e7b3b7, task_id = 6ed15448-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Send message - OK, id = 6ed1539e-0e0a-11e6-926f-a63047e7b3b7, task_id = 6ed15448-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Waiting for the signal
+2016/04/29 16:01:05 Get ready tasks - OK
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Set queue - OK, Queue: tst100-web01 id = 6eec4848-0e0a-11e6-926f-a63047e7b3b7, task_id = 6eec48fc-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Update task - OK, id = 6eec4848-0e0a-11e6-926f-a63047e7b3b7, task_id = 6eec48fc-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Send message - OK, id = 6eec4848-0e0a-11e6-926f-a63047e7b3b7, task_id = 6eec48fc-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Waiting for the signal
+2016/04/29 16:01:05 Get ready tasks - OK
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Set queue - OK, Queue: tst100-web01 id = 6f07d7f2-0e0a-11e6-926f-a63047e7b3b7, task_id = 6f07d89c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Update task - OK, id = 6f07d7f2-0e0a-11e6-926f-a63047e7b3b7, task_id = 6f07d89c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Send message - OK, id = 6f07d7f2-0e0a-11e6-926f-a63047e7b3b7, task_id = 6f07d89c-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Waiting for the signal
+2016/04/29 16:01:05 Get ready tasks - OK
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Set queue - OK, Queue: tst100-web01 id = 6f29328a-0e0a-11e6-926f-a63047e7b3b7, task_id = 6f293334-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Update task - OK, id = 6f29328a-0e0a-11e6-926f-a63047e7b3b7, task_id = 6f293334-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Send message - OK, id = 6f29328a-0e0a-11e6-926f-a63047e7b3b7, task_id = 6f293334-0e0a-11e6-926f-a63047e7b3b7
+2016/04/29 16:01:05 Waiting for the signal
+2016/04/29 16:20:32 Get ready tasks - OK
+2016/04/29 16:20:32 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:20:32 Set queue - OK, Queue: tst100-web00 id = 268d3f8c-0e0d-11e6-926f-a63047e7b3b7, task_id = 268d5134-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:20:32 Update task - OK, id = 268d3f8c-0e0d-11e6-926f-a63047e7b3b7, task_id = 268d5134-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:20:32 Send message - OK, id = 268d3f8c-0e0d-11e6-926f-a63047e7b3b7, task_id = 268d5134-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:20:32 Waiting for the signal
+2016/04/29 16:21:40 Get ready tasks - OK
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Set queue - OK, Queue: tst100-web01 id = 4ed04340-0e0d-11e6-926f-a63047e7b3b7, task_id = 4ed04d04-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Update task - OK, id = 4ed04340-0e0d-11e6-926f-a63047e7b3b7, task_id = 4ed04d04-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Send message - OK, id = 4ed04340-0e0d-11e6-926f-a63047e7b3b7, task_id = 4ed04d04-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Waiting for the signal
+2016/04/29 16:21:40 Get ready tasks - OK
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Set queue - OK, Queue: tst100-web01 id = 4eec5508-0e0d-11e6-926f-a63047e7b3b7, task_id = 4eec559e-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Update task - OK, id = 4eec5508-0e0d-11e6-926f-a63047e7b3b7, task_id = 4eec559e-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Send message - OK, id = 4eec5508-0e0d-11e6-926f-a63047e7b3b7, task_id = 4eec559e-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Waiting for the signal
+2016/04/29 16:21:40 Get ready tasks - OK
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Set queue - OK, Queue: tst100-web01 id = 4f07808a-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f078170-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Update task - OK, id = 4f07808a-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f078170-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Send message - OK, id = 4f07808a-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f078170-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Waiting for the signal
+2016/04/29 16:21:40 Get ready tasks - OK
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Set queue - OK, Queue: tst100-web01 id = 4f21c756-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f21c7ec-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Update task - OK, id = 4f21c756-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f21c7ec-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Send message - OK, id = 4f21c756-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f21c7ec-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Waiting for the signal
+2016/04/29 16:21:40 Get ready tasks - OK
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Set queue - OK, Queue: tst100-web01 id = 4f419874-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f41990a-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Update task - OK, id = 4f419874-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f41990a-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Send message - OK, id = 4f419874-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f41990a-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:40 Waiting for the signal
+2016/04/29 16:21:41 Get ready tasks - OK
+2016/04/29 16:21:41 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:41 Set queue - OK, Queue: tst100-web01 id = 4f6ad478-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f6ad50e-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:41 Update task - OK, id = 4f6ad478-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f6ad50e-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:41 Send message - OK, id = 4f6ad478-0e0d-11e6-926f-a63047e7b3b7, task_id = 4f6ad50e-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:41 Waiting for the signal
+2016/04/29 16:21:44 Get ready tasks - OK
+2016/04/29 16:21:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Set queue - OK, Queue: tst100-web00 id = 5130491e-0e0d-11e6-926f-a63047e7b3b7, task_id = 513049b4-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Update task - OK, id = 5130491e-0e0d-11e6-926f-a63047e7b3b7, task_id = 513049b4-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Send message - OK, id = 5130491e-0e0d-11e6-926f-a63047e7b3b7, task_id = 513049b4-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Waiting for the signal
+2016/04/29 16:21:44 Get ready tasks - OK
+2016/04/29 16:21:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Set queue - OK, Queue: tst100-web00 id = 5148ffd6-0e0d-11e6-926f-a63047e7b3b7, task_id = 51490080-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Update task - OK, id = 5148ffd6-0e0d-11e6-926f-a63047e7b3b7, task_id = 51490080-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Send message - OK, id = 5148ffd6-0e0d-11e6-926f-a63047e7b3b7, task_id = 51490080-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Waiting for the signal
+2016/04/29 16:21:44 Get ready tasks - OK
+2016/04/29 16:21:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Set queue - OK, Queue: tst100-web00 id = 51641e60-0e0d-11e6-926f-a63047e7b3b7, task_id = 51641f00-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Update task - OK, id = 51641e60-0e0d-11e6-926f-a63047e7b3b7, task_id = 51641f00-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Send message - OK, id = 51641e60-0e0d-11e6-926f-a63047e7b3b7, task_id = 51641f00-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Waiting for the signal
+2016/04/29 16:21:44 Get ready tasks - OK
+2016/04/29 16:21:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Set queue - OK, Queue: tst100-web00 id = 517f0022-0e0d-11e6-926f-a63047e7b3b7, task_id = 517f00c2-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Update task - OK, id = 517f0022-0e0d-11e6-926f-a63047e7b3b7, task_id = 517f00c2-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Send message - OK, id = 517f0022-0e0d-11e6-926f-a63047e7b3b7, task_id = 517f00c2-0e0d-11e6-926f-a63047e7b3b7
+2016/04/29 16:21:44 Waiting for the signal
+2016/04/29 16:33:10 Get ready tasks - OK
+2016/04/29 16:33:10 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:10 Set queue - OK, Queue: tst100-web00 id = ea459220-0e0e-11e6-926f-a63047e7b3b7, task_id = ea459c70-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:10 Update task - OK, id = ea459220-0e0e-11e6-926f-a63047e7b3b7, task_id = ea459c70-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:10 Send message - OK, id = ea459220-0e0e-11e6-926f-a63047e7b3b7, task_id = ea459c70-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:10 Waiting for the signal
+2016/04/29 16:33:10 Get ready tasks - OK
+2016/04/29 16:33:10 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:10 Set queue - OK, Queue: tst100-web00 id = ea88527c-0e0e-11e6-926f-a63047e7b3b7, task_id = ea88531c-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:10 Update task - OK, id = ea88527c-0e0e-11e6-926f-a63047e7b3b7, task_id = ea88531c-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:10 Send message - OK, id = ea88527c-0e0e-11e6-926f-a63047e7b3b7, task_id = ea88531c-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:10 Waiting for the signal
+2016/04/29 16:33:11 Get ready tasks - OK
+2016/04/29 16:33:11 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:11 Set queue - OK, Queue: tst100-web00 id = eabcd3f8-0e0e-11e6-926f-a63047e7b3b7, task_id = eabcd48e-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:11 Update task - OK, id = eabcd3f8-0e0e-11e6-926f-a63047e7b3b7, task_id = eabcd48e-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:11 Send message - OK, id = eabcd3f8-0e0e-11e6-926f-a63047e7b3b7, task_id = eabcd48e-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:11 Waiting for the signal
+2016/04/29 16:33:12 Get ready tasks - OK
+2016/04/29 16:33:12 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:12 Set queue - OK, Queue: tst100-web01 id = eba4d6b2-0e0e-11e6-926f-a63047e7b3b7, task_id = eba4d748-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:12 Update task - OK, id = eba4d6b2-0e0e-11e6-926f-a63047e7b3b7, task_id = eba4d748-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:12 Send message - OK, id = eba4d6b2-0e0e-11e6-926f-a63047e7b3b7, task_id = eba4d748-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:12 Waiting for the signal
+2016/04/29 16:33:13 Get ready tasks - OK
+2016/04/29 16:33:13 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:13 Set queue - OK, Queue: tst100-web01 id = ebe25cd0-0e0e-11e6-926f-a63047e7b3b7, task_id = ebe25d7a-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:13 Update task - OK, id = ebe25cd0-0e0e-11e6-926f-a63047e7b3b7, task_id = ebe25d7a-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:13 Send message - OK, id = ebe25cd0-0e0e-11e6-926f-a63047e7b3b7, task_id = ebe25d7a-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:13 Waiting for the signal
+2016/04/29 16:33:13 Get ready tasks - OK
+2016/04/29 16:33:13 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:13 Set queue - OK, Queue: tst100-web01 id = ec426058-0e0e-11e6-926f-a63047e7b3b7, task_id = ec4260ee-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:13 Update task - OK, id = ec426058-0e0e-11e6-926f-a63047e7b3b7, task_id = ec4260ee-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:13 Send message - OK, id = ec426058-0e0e-11e6-926f-a63047e7b3b7, task_id = ec4260ee-0e0e-11e6-926f-a63047e7b3b7
+2016/04/29 16:33:13 Waiting for the signal
+2016/04/29 16:39:22 Get ready tasks - OK
+2016/04/29 16:39:22 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:39:22 Set queue - OK, Queue: tst100-web00 id = c82895a6-0e0f-11e6-926f-a63047e7b3b7, task_id = c8289fe2-0e0f-11e6-926f-a63047e7b3b7
+2016/04/29 16:39:22 Update task - OK, id = c82895a6-0e0f-11e6-926f-a63047e7b3b7, task_id = c8289fe2-0e0f-11e6-926f-a63047e7b3b7
+2016/04/29 16:39:22 Send message - OK, id = c82895a6-0e0f-11e6-926f-a63047e7b3b7, task_id = c8289fe2-0e0f-11e6-926f-a63047e7b3b7
+2016/04/29 16:39:22 Waiting for the signal
+2016/04/29 16:39:43 Get ready tasks - OK
+2016/04/29 16:39:43 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:39:43 Set queue - OK, Queue: tst100-web00 id = d4622792-0e0f-11e6-926f-a63047e7b3b7, task_id = d4623098-0e0f-11e6-926f-a63047e7b3b7
+2016/04/29 16:39:43 Update task - OK, id = d4622792-0e0f-11e6-926f-a63047e7b3b7, task_id = d4623098-0e0f-11e6-926f-a63047e7b3b7
+2016/04/29 16:39:43 Send message - OK, id = d4622792-0e0f-11e6-926f-a63047e7b3b7, task_id = d4623098-0e0f-11e6-926f-a63047e7b3b7
+2016/04/29 16:39:43 Waiting for the signal
+2016/04/29 16:42:09 Get ready tasks - OK
+2016/04/29 16:42:09 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:42:09 Set queue - OK, Queue: tst100-web00 id = 2bbfcad0-0e10-11e6-926f-a63047e7b3b7, task_id = 2bbfd6ba-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:42:09 Update task - OK, id = 2bbfcad0-0e10-11e6-926f-a63047e7b3b7, task_id = 2bbfd6ba-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:42:09 Send message - OK, id = 2bbfcad0-0e10-11e6-926f-a63047e7b3b7, task_id = 2bbfd6ba-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:42:09 Waiting for the signal
+2016/04/29 16:42:16 Get ready tasks - OK
+2016/04/29 16:42:16 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:42:16 Set queue - OK, Queue: tst100-web00 id = 2fedab22-0e10-11e6-926f-a63047e7b3b7, task_id = 2fedabb8-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:42:16 Update task - OK, id = 2fedab22-0e10-11e6-926f-a63047e7b3b7, task_id = 2fedabb8-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:42:16 Send message - OK, id = 2fedab22-0e10-11e6-926f-a63047e7b3b7, task_id = 2fedabb8-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:42:16 Waiting for the signal
+2016/04/29 16:42:50 Get ready tasks - OK
+2016/04/29 16:42:50 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:42:50 Set queue - OK, Queue: tst100-web00 id = 43bd6e3a-0e10-11e6-926f-a63047e7b3b7, task_id = 43bd79b6-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:42:50 Update task - OK, id = 43bd6e3a-0e10-11e6-926f-a63047e7b3b7, task_id = 43bd79b6-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:42:50 Send message - OK, id = 43bd6e3a-0e10-11e6-926f-a63047e7b3b7, task_id = 43bd79b6-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:42:50 Waiting for the signal
+2016/04/29 16:43:20 Get ready tasks - OK
+2016/04/29 16:43:20 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:43:20 Set queue - OK, Queue: tst100-web00 id = 562682aa-0e10-11e6-926f-a63047e7b3b7, task_id = 56268c50-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:43:20 Update task - OK, id = 562682aa-0e10-11e6-926f-a63047e7b3b7, task_id = 56268c50-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:43:20 Send message - OK, id = 562682aa-0e10-11e6-926f-a63047e7b3b7, task_id = 56268c50-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:43:20 Waiting for the signal
+2016/04/29 16:43:57 Get ready tasks - OK
+2016/04/29 16:43:57 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:43:57 Set queue - OK, Queue: tst100-web00 id = 6bed6270-0e10-11e6-926f-a63047e7b3b7, task_id = 6bed6c7a-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:43:57 Update task - OK, id = 6bed6270-0e10-11e6-926f-a63047e7b3b7, task_id = 6bed6c7a-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:43:57 Send message - OK, id = 6bed6270-0e10-11e6-926f-a63047e7b3b7, task_id = 6bed6c7a-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:43:57 Waiting for the signal
+2016/04/29 16:44:18 Get ready tasks - OK
+2016/04/29 16:44:18 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:44:18 Set queue - OK, Queue: tst100-web00 id = 78ab4414-0e10-11e6-926f-a63047e7b3b7, task_id = 78ab510c-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:44:18 Update task - OK, id = 78ab4414-0e10-11e6-926f-a63047e7b3b7, task_id = 78ab510c-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:44:18 Send message - OK, id = 78ab4414-0e10-11e6-926f-a63047e7b3b7, task_id = 78ab510c-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:44:18 Waiting for the signal
+2016/04/29 16:45:12 Get ready tasks - OK
+2016/04/29 16:45:12 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:45:12 Set queue - OK, Queue: tst100-web00 id = 98a1b8a2-0e10-11e6-926f-a63047e7b3b7, task_id = 98a1c2a2-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:45:12 Update task - OK, id = 98a1b8a2-0e10-11e6-926f-a63047e7b3b7, task_id = 98a1c2a2-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:45:12 Send message - OK, id = 98a1b8a2-0e10-11e6-926f-a63047e7b3b7, task_id = 98a1c2a2-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:45:12 Waiting for the signal
+2016/04/29 16:47:15 Get ready tasks - OK
+2016/04/29 16:47:15 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:15 Set queue - OK, Queue: tst100-web00 id = e1dddfdc-0e10-11e6-926f-a63047e7b3b7, task_id = e1dde928-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:15 Update task - OK, id = e1dddfdc-0e10-11e6-926f-a63047e7b3b7, task_id = e1dde928-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:15 Send message - OK, id = e1dddfdc-0e10-11e6-926f-a63047e7b3b7, task_id = e1dde928-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:15 Waiting for the signal
+2016/04/29 16:47:31 Get ready tasks - OK
+2016/04/29 16:47:31 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:31 Set queue - OK, Queue: tst100-web00 id = eb472f10-0e10-11e6-926f-a63047e7b3b7, task_id = eb473a78-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:31 Update task - OK, id = eb472f10-0e10-11e6-926f-a63047e7b3b7, task_id = eb473a78-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:31 Send message - OK, id = eb472f10-0e10-11e6-926f-a63047e7b3b7, task_id = eb473a78-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:31 Waiting for the signal
+2016/04/29 16:47:32 Get ready tasks - OK
+2016/04/29 16:47:32 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:32 Set queue - OK, Queue: tst100-web01 id = ec1d3894-0e10-11e6-926f-a63047e7b3b7, task_id = ec1d3920-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:32 Update task - OK, id = ec1d3894-0e10-11e6-926f-a63047e7b3b7, task_id = ec1d3920-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:32 Send message - OK, id = ec1d3894-0e10-11e6-926f-a63047e7b3b7, task_id = ec1d3920-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:32 Waiting for the signal
+2016/04/29 16:47:45 Get ready tasks - OK
+2016/04/29 16:47:45 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:45 Set queue - OK, Queue: tst100-web00 id = f4160c60-0e10-11e6-926f-a63047e7b3b7, task_id = f416164c-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:45 Update task - OK, id = f4160c60-0e10-11e6-926f-a63047e7b3b7, task_id = f416164c-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:45 Send message - OK, id = f4160c60-0e10-11e6-926f-a63047e7b3b7, task_id = f416164c-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:47:45 Waiting for the signal
+2016/04/29 16:48:02 Get ready tasks - OK
+2016/04/29 16:48:02 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:02 Set queue - OK, Queue: tst100-web00 id = fe11aa3a-0e10-11e6-926f-a63047e7b3b7, task_id = fe11b6ec-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:02 Update task - OK, id = fe11aa3a-0e10-11e6-926f-a63047e7b3b7, task_id = fe11b6ec-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:02 Send message - OK, id = fe11aa3a-0e10-11e6-926f-a63047e7b3b7, task_id = fe11b6ec-0e10-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:02 Waiting for the signal
+2016/04/29 16:48:38 Get ready tasks - OK
+2016/04/29 16:48:38 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:38 Set queue - OK, Queue: tst100-web00 id = 13921a7a-0e11-11e6-926f-a63047e7b3b7, task_id = 139223f8-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:38 Update task - OK, id = 13921a7a-0e11-11e6-926f-a63047e7b3b7, task_id = 139223f8-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:38 Send message - OK, id = 13921a7a-0e11-11e6-926f-a63047e7b3b7, task_id = 139223f8-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:38 Waiting for the signal
+2016/04/29 16:48:49 Get ready tasks - OK
+2016/04/29 16:48:49 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:49 Set queue - OK, Queue: tst100-web00 id = 1a1ff650-0e11-11e6-926f-a63047e7b3b7, task_id = 1a1fff92-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:49 Update task - OK, id = 1a1ff650-0e11-11e6-926f-a63047e7b3b7, task_id = 1a1fff92-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:49 Send message - OK, id = 1a1ff650-0e11-11e6-926f-a63047e7b3b7, task_id = 1a1fff92-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:49 Waiting for the signal
+2016/04/29 16:48:59 Get ready tasks - OK
+2016/04/29 16:48:59 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:59 Set queue - OK, Queue: tst100-web00 id = 202b7240-0e11-11e6-926f-a63047e7b3b7, task_id = 202b7c86-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:59 Update task - OK, id = 202b7240-0e11-11e6-926f-a63047e7b3b7, task_id = 202b7c86-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:59 Send message - OK, id = 202b7240-0e11-11e6-926f-a63047e7b3b7, task_id = 202b7c86-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:48:59 Waiting for the signal
+2016/04/29 16:49:07 Get ready tasks - OK
+2016/04/29 16:49:07 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:07 Set queue - OK, Queue: tst100-web00 id = 24d7a8fe-0e11-11e6-926f-a63047e7b3b7, task_id = 24d7a994-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:07 Update task - OK, id = 24d7a8fe-0e11-11e6-926f-a63047e7b3b7, task_id = 24d7a994-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:07 Send message - OK, id = 24d7a8fe-0e11-11e6-926f-a63047e7b3b7, task_id = 24d7a994-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:07 Waiting for the signal
+2016/04/29 16:49:15 Get ready tasks - OK
+2016/04/29 16:49:15 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:15 Set queue - OK, Queue: tst100-web00 id = 299b1952-0e11-11e6-926f-a63047e7b3b7, task_id = 299b2366-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:15 Update task - OK, id = 299b1952-0e11-11e6-926f-a63047e7b3b7, task_id = 299b2366-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:15 Send message - OK, id = 299b1952-0e11-11e6-926f-a63047e7b3b7, task_id = 299b2366-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:15 Waiting for the signal
+2016/04/29 16:49:21 Get ready tasks - OK
+2016/04/29 16:49:21 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:21 Set queue - OK, Queue: tst100-web00 id = 2d13d95c-0e11-11e6-926f-a63047e7b3b7, task_id = 2d13da06-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:21 Update task - OK, id = 2d13d95c-0e11-11e6-926f-a63047e7b3b7, task_id = 2d13da06-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:21 Send message - OK, id = 2d13d95c-0e11-11e6-926f-a63047e7b3b7, task_id = 2d13da06-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:21 Waiting for the signal
+2016/04/29 16:49:22 Get ready tasks - OK
+2016/04/29 16:49:22 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:22 Set queue - OK, Queue: tst100-web00 id = 2de16b38-0e11-11e6-926f-a63047e7b3b7, task_id = 2de16bce-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:22 Update task - OK, id = 2de16b38-0e11-11e6-926f-a63047e7b3b7, task_id = 2de16bce-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:22 Send message - OK, id = 2de16b38-0e11-11e6-926f-a63047e7b3b7, task_id = 2de16bce-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:22 Waiting for the signal
+2016/04/29 16:49:23 Get ready tasks - OK
+2016/04/29 16:49:23 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:23 Set queue - OK, Queue: tst100-web00 id = 2e436d6a-0e11-11e6-926f-a63047e7b3b7, task_id = 2e436e14-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:23 Update task - OK, id = 2e436d6a-0e11-11e6-926f-a63047e7b3b7, task_id = 2e436e14-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:23 Send message - OK, id = 2e436d6a-0e11-11e6-926f-a63047e7b3b7, task_id = 2e436e14-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:23 Waiting for the signal
+2016/04/29 16:49:23 Get ready tasks - OK
+2016/04/29 16:49:23 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:23 Set queue - OK, Queue: tst100-web00 id = 2e8f0676-0e11-11e6-926f-a63047e7b3b7, task_id = 2e8f073e-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:23 Update task - OK, id = 2e8f0676-0e11-11e6-926f-a63047e7b3b7, task_id = 2e8f073e-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:23 Send message - OK, id = 2e8f0676-0e11-11e6-926f-a63047e7b3b7, task_id = 2e8f073e-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:23 Waiting for the signal
+2016/04/29 16:49:24 Get ready tasks - OK
+2016/04/29 16:49:24 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:24 Set queue - OK, Queue: tst100-web00 id = 2ecd0098-0e11-11e6-926f-a63047e7b3b7, task_id = 2ecd0138-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:24 Update task - OK, id = 2ecd0098-0e11-11e6-926f-a63047e7b3b7, task_id = 2ecd0138-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:24 Send message - OK, id = 2ecd0098-0e11-11e6-926f-a63047e7b3b7, task_id = 2ecd0138-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:24 Waiting for the signal
+2016/04/29 16:49:24 Get ready tasks - OK
+2016/04/29 16:49:24 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:24 Set queue - OK, Queue: tst100-web00 id = 2f019bbe-0e11-11e6-926f-a63047e7b3b7, task_id = 2f019c54-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:24 Update task - OK, id = 2f019bbe-0e11-11e6-926f-a63047e7b3b7, task_id = 2f019c54-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:24 Send message - OK, id = 2f019bbe-0e11-11e6-926f-a63047e7b3b7, task_id = 2f019c54-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:24 Waiting for the signal
+2016/04/29 16:49:25 Get ready tasks - OK
+2016/04/29 16:49:25 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:25 Set queue - OK, Queue: tst100-web00 id = 2f846936-0e11-11e6-926f-a63047e7b3b7, task_id = 2f8469c2-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:25 Update task - OK, id = 2f846936-0e11-11e6-926f-a63047e7b3b7, task_id = 2f8469c2-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:25 Send message - OK, id = 2f846936-0e11-11e6-926f-a63047e7b3b7, task_id = 2f8469c2-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:25 Waiting for the signal
+2016/04/29 16:49:25 Get ready tasks - OK
+2016/04/29 16:49:25 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:25 Set queue - OK, Queue: tst100-web00 id = 2fbdbdf8-0e11-11e6-926f-a63047e7b3b7, task_id = 2fbdc9d8-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:25 Update task - OK, id = 2fbdbdf8-0e11-11e6-926f-a63047e7b3b7, task_id = 2fbdc9d8-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:25 Send message - OK, id = 2fbdbdf8-0e11-11e6-926f-a63047e7b3b7, task_id = 2fbdc9d8-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:25 Waiting for the signal
+2016/04/29 16:49:26 Get ready tasks - OK
+2016/04/29 16:49:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:26 Set queue - OK, Queue: tst100-web00 id = 2ff1db06-0e11-11e6-926f-a63047e7b3b7, task_id = 2ff1db9c-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:26 Update task - OK, id = 2ff1db06-0e11-11e6-926f-a63047e7b3b7, task_id = 2ff1db9c-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:26 Send message - OK, id = 2ff1db06-0e11-11e6-926f-a63047e7b3b7, task_id = 2ff1db9c-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:26 Waiting for the signal
+2016/04/29 16:49:26 Get ready tasks - OK
+2016/04/29 16:49:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:26 Set queue - OK, Queue: tst100-web00 id = 3022b262-0e11-11e6-926f-a63047e7b3b7, task_id = 3022b334-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:26 Update task - OK, id = 3022b262-0e11-11e6-926f-a63047e7b3b7, task_id = 3022b334-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:26 Send message - OK, id = 3022b262-0e11-11e6-926f-a63047e7b3b7, task_id = 3022b334-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:26 Waiting for the signal
+2016/04/29 16:49:26 Get ready tasks - OK
+2016/04/29 16:49:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:26 Set queue - OK, Queue: tst100-web00 id = 304eaf2a-0e11-11e6-926f-a63047e7b3b7, task_id = 304eafc0-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:26 Update task - OK, id = 304eaf2a-0e11-11e6-926f-a63047e7b3b7, task_id = 304eafc0-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:26 Send message - OK, id = 304eaf2a-0e11-11e6-926f-a63047e7b3b7, task_id = 304eafc0-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:26 Waiting for the signal
+2016/04/29 16:49:27 Get ready tasks - OK
+2016/04/29 16:49:27 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:27 Set queue - OK, Queue: tst100-web00 id = 3070b16a-0e11-11e6-926f-a63047e7b3b7, task_id = 3070b264-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:27 Update task - OK, id = 3070b16a-0e11-11e6-926f-a63047e7b3b7, task_id = 3070b264-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:27 Send message - OK, id = 3070b16a-0e11-11e6-926f-a63047e7b3b7, task_id = 3070b264-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:27 Waiting for the signal
+2016/04/29 16:49:56 Get ready tasks - OK
+2016/04/29 16:49:56 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:56 Set queue - OK, Queue: tst100-web00 id = 4225d1ba-0e11-11e6-926f-a63047e7b3b7, task_id = 4225dee4-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:56 Update task - OK, id = 4225d1ba-0e11-11e6-926f-a63047e7b3b7, task_id = 4225dee4-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:56 Send message - OK, id = 4225d1ba-0e11-11e6-926f-a63047e7b3b7, task_id = 4225dee4-0e11-11e6-926f-a63047e7b3b7
+2016/04/29 16:49:56 Waiting for the signal
+2016/04/29 17:10:27 Get ready tasks - OK
+2016/04/29 17:10:27 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:10:27 Set queue - OK, Queue: tst100-web00 id = 1fd5fed4-0e14-11e6-926f-a63047e7b3b7, task_id = 1fd60a50-0e14-11e6-926f-a63047e7b3b7
+2016/04/29 17:10:27 Update task - OK, id = 1fd5fed4-0e14-11e6-926f-a63047e7b3b7, task_id = 1fd60a50-0e14-11e6-926f-a63047e7b3b7
+2016/04/29 17:10:27 Send message - OK, id = 1fd5fed4-0e14-11e6-926f-a63047e7b3b7, task_id = 1fd60a50-0e14-11e6-926f-a63047e7b3b7
+2016/04/29 17:10:27 Waiting for the signal
+2016/04/29 17:17:04 Get ready tasks - OK
+2016/04/29 17:17:04 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:17:04 Set queue - OK, Queue: tst100-web00 id = 0c3a4fdc-0e15-11e6-926f-a63047e7b3b7, task_id = 0c3a5d42-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:17:04 Update task - OK, id = 0c3a4fdc-0e15-11e6-926f-a63047e7b3b7, task_id = 0c3a5d42-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:17:04 Send message - OK, id = 0c3a4fdc-0e15-11e6-926f-a63047e7b3b7, task_id = 0c3a5d42-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:17:04 Waiting for the signal
+2016/04/29 17:18:45 Get ready tasks - OK
+2016/04/29 17:18:45 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:18:45 Set queue - OK, Queue: tst100-web00 id = 4849e0a0-0e15-11e6-926f-a63047e7b3b7, task_id = 4849ea96-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:18:45 Update task - OK, id = 4849e0a0-0e15-11e6-926f-a63047e7b3b7, task_id = 4849ea96-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:18:45 Send message - OK, id = 4849e0a0-0e15-11e6-926f-a63047e7b3b7, task_id = 4849ea96-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:18:45 Waiting for the signal
+2016/04/29 17:22:06 Get ready tasks - OK
+2016/04/29 17:22:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:22:06 Set queue - OK, Queue: tst100-web00 id = c01b303e-0e15-11e6-926f-a63047e7b3b7, task_id = c01b4614-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:22:06 Update task - OK, id = c01b303e-0e15-11e6-926f-a63047e7b3b7, task_id = c01b4614-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:22:06 Send message - OK, id = c01b303e-0e15-11e6-926f-a63047e7b3b7, task_id = c01b4614-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:22:06 Waiting for the signal
+2016/04/29 17:23:03 Get ready tasks - OK
+2016/04/29 17:23:03 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:23:03 Set queue - OK, Queue: tst100-web00 id = e206e44a-0e15-11e6-926f-a63047e7b3b7, task_id = e206ef62-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:23:03 Update task - OK, id = e206e44a-0e15-11e6-926f-a63047e7b3b7, task_id = e206ef62-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:23:03 Send message - OK, id = e206e44a-0e15-11e6-926f-a63047e7b3b7, task_id = e206ef62-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:23:03 Waiting for the signal
+2016/04/29 17:23:43 Get ready tasks - OK
+2016/04/29 17:23:43 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:23:43 Set queue - OK, Queue: tst100-web00 id = f9dfd16c-0e15-11e6-926f-a63047e7b3b7, task_id = f9dfddd8-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:23:43 Update task - OK, id = f9dfd16c-0e15-11e6-926f-a63047e7b3b7, task_id = f9dfddd8-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:23:43 Send message - OK, id = f9dfd16c-0e15-11e6-926f-a63047e7b3b7, task_id = f9dfddd8-0e15-11e6-926f-a63047e7b3b7
+2016/04/29 17:23:43 Waiting for the signal
+2016/04/29 17:24:08 Get ready tasks - OK
+2016/04/29 17:24:08 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:24:08 Set queue - OK, Queue: tst100-web00 id = 091664f2-0e16-11e6-926f-a63047e7b3b7, task_id = 09166e5c-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:24:08 Update task - OK, id = 091664f2-0e16-11e6-926f-a63047e7b3b7, task_id = 09166e5c-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:24:08 Send message - OK, id = 091664f2-0e16-11e6-926f-a63047e7b3b7, task_id = 09166e5c-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:24:08 Waiting for the signal
+2016/04/29 17:25:26 Get ready tasks - OK
+2016/04/29 17:25:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:25:26 Set queue - OK, Queue: tst100-web00 id = 374e2d1e-0e16-11e6-926f-a63047e7b3b7, task_id = 374e37be-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:25:26 Update task - OK, id = 374e2d1e-0e16-11e6-926f-a63047e7b3b7, task_id = 374e37be-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:25:26 Send message - OK, id = 374e2d1e-0e16-11e6-926f-a63047e7b3b7, task_id = 374e37be-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:25:26 Waiting for the signal
+2016/04/29 17:26:06 Get ready tasks - OK
+2016/04/29 17:26:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:26:06 Set queue - OK, Queue: tst100-web00 id = 4fa64e82-0e16-11e6-926f-a63047e7b3b7, task_id = 4fa6592c-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:26:06 Update task - OK, id = 4fa64e82-0e16-11e6-926f-a63047e7b3b7, task_id = 4fa6592c-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:26:06 Send message - OK, id = 4fa64e82-0e16-11e6-926f-a63047e7b3b7, task_id = 4fa6592c-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:26:06 Waiting for the signal
+2016/04/29 17:27:28 Get ready tasks - OK
+2016/04/29 17:27:28 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:27:28 Set queue - OK, Queue: tst100-web00 id = 8052559e-0e16-11e6-926f-a63047e7b3b7, task_id = 8052603e-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:27:28 Update task - OK, id = 8052559e-0e16-11e6-926f-a63047e7b3b7, task_id = 8052603e-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:27:28 Send message - OK, id = 8052559e-0e16-11e6-926f-a63047e7b3b7, task_id = 8052603e-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:27:28 Waiting for the signal
+2016/04/29 17:28:14 Get ready tasks - OK
+2016/04/29 17:28:14 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:28:14 Set queue - OK, Queue: tst100-web00 id = 9be7d5ea-0e16-11e6-926f-a63047e7b3b7, task_id = 9be7e198-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:28:14 Update task - OK, id = 9be7d5ea-0e16-11e6-926f-a63047e7b3b7, task_id = 9be7e198-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:28:14 Send message - OK, id = 9be7d5ea-0e16-11e6-926f-a63047e7b3b7, task_id = 9be7e198-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:28:14 Waiting for the signal
+2016/04/29 17:29:01 Get ready tasks - OK
+2016/04/29 17:29:01 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:29:01 Set queue - OK, Queue: tst100-web00 id = b7f2aecc-0e16-11e6-926f-a63047e7b3b7, task_id = b7f2ba34-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:29:01 Update task - OK, id = b7f2aecc-0e16-11e6-926f-a63047e7b3b7, task_id = b7f2ba34-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:29:01 Send message - OK, id = b7f2aecc-0e16-11e6-926f-a63047e7b3b7, task_id = b7f2ba34-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:29:01 Waiting for the signal
+2016/04/29 17:29:18 Get ready tasks - OK
+2016/04/29 17:29:18 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:29:18 Set queue - OK, Queue: tst100-web00 id = c196c5a8-0e16-11e6-926f-a63047e7b3b7, task_id = c196cf44-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:29:18 Update task - OK, id = c196c5a8-0e16-11e6-926f-a63047e7b3b7, task_id = c196cf44-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:29:18 Send message - OK, id = c196c5a8-0e16-11e6-926f-a63047e7b3b7, task_id = c196cf44-0e16-11e6-926f-a63047e7b3b7
+2016/04/29 17:29:18 Waiting for the signal
+2016/04/29 17:34:16 Get ready tasks - OK
+2016/04/29 17:34:16 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:34:16 Set queue - OK, Queue: tst100-web00 id = 738d68d4-0e17-11e6-926f-a63047e7b3b7, task_id = 738d748c-0e17-11e6-926f-a63047e7b3b7
+2016/04/29 17:34:16 Update task - OK, id = 738d68d4-0e17-11e6-926f-a63047e7b3b7, task_id = 738d748c-0e17-11e6-926f-a63047e7b3b7
+2016/04/29 17:34:16 Send message - OK, id = 738d68d4-0e17-11e6-926f-a63047e7b3b7, task_id = 738d748c-0e17-11e6-926f-a63047e7b3b7
+2016/04/29 17:34:16 Waiting for the signal

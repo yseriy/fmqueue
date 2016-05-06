@@ -1,0 +1,805 @@
+INFO - Set signal handler - OK
+INFO - Connect to storage - OK
+INFO - Connect to worker - OK
+INFO - Receive message - OK. Body: {"account":"user1","address":"host1","data":{"command":"test_command","args":{"a2":2,"a1":1}}}
+INFO - Decode from json - OK, Body: {"account":"user1","address":"host1","data":{"command":"test_command","args":{"a2":2,"a1":1}}}
+INFO - Start transaction - OK, id = 6D5AA728-0D4B-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = 6D5AA728-0D4B-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+INFO - Receive message - OK. Body: HASH(0x2345f48)
+ERROR - Decode from json - Error: <malformed JSON string, neither array, object, number, string or atom, at character offset 0 (before "HASH(0x2345f48)") at /usr/local/fmqueue/bin/insert_worker.pl line 48.
+>, Body: HASH(0x2345f48)
+INFO - Receive message - OK. Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Start transaction - OK, id = 6593BF84-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = 6593BF84-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+INFO - Receive message - OK. Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Start transaction - OK, id = 89C7C012-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = 89C7C012-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+INFO - Receive message - OK. Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Start transaction - OK, id = 9D74B872-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = 9D74B872-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+INFO - Receive message - OK. Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"},"id":"100500","task_id":"100500"}
+INFO - Start transaction - OK, id = C76AE322-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = C76AE322-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+INFO - Receive message - OK. Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Start transaction - OK, id = EEBE6F7A-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = EEBE6F7A-0D55-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+INFO - Receive message - OK. Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"web01","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Start transaction - OK, id = 49E234EA-0D56-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = 49E234EA-0D56-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+INFO - Receive message - OK. Body: {"account":"megauser","address":"tst100-web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100-web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Start transaction - OK, id = 7BFFC528-0D56-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = 7BFFC528-0D56-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+INFO - Receive message - OK. Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Start transaction - OK, id = 134090CA-0D57-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = 134090CA-0D57-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+INFO - Receive message - OK. Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Decode from json - OK, Body: {"account":"megauser","address":"tst100web00","data":{"args":{"ACCOUNT":"user01","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+INFO - Start transaction - OK, id = B6F478EE-0D57-11E6-B37B-5A5A47E7B3B7
+INFO - Send ACK - OK, id = B6F478EE-0D57-11E6-B37B-5A5A47E7B3B7
+INFO - Send signal
+FATAL - Receive message - Error: <AMQP socket connection was closed. at /usr/local/fmqueue/lib/FMQueue/Transport/Worker/RabbitMQ.pm line 70.
+>, Exit
+INFO - Set signal handler - OK
+INFO - Connect to storage - OK
+INFO - Connect to worker - OK
+2016/04/29 09:55:28 Set signal handler - OK
+2016/04/29 09:55:28 Connect to storage - OK
+2016/04/29 09:55:28 Connect to worker - OK
+2016/04/29 10:14:06 Set signal handler - OK
+2016/04/29 10:14:06 Connect to storage - OK
+2016/04/29 10:14:06 Connect to worker - OK
+2016/04/29 10:30:35 Set signal handler - OK
+2016/04/29 10:30:35 Connect to storage - OK
+2016/04/29 10:30:35 Connect to worker - OK
+2016/04/29 10:37:47 Set signal handler - OK
+2016/04/29 10:37:47 Connect to storage - OK
+2016/04/29 10:37:47 Connect to worker - OK
+2016/04/29 10:38:20 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:38:20 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:38:20 Start transaction - OK, id = 5840D4F6-0DDD-11E6-926F-A63047E7B3B7
+2016/04/29 10:38:20 Send ACK - OK, id = 5840D4F6-0DDD-11E6-926F-A63047E7B3B7
+2016/04/29 10:38:20 Send signal
+2016/04/29 10:43:44 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:43:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup00","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"57i6ui764wu4w3w4u"},"command":"restore_backup"}}
+2016/04/29 10:43:44 Start transaction - OK, id = 195C890A-0DDE-11E6-926F-A63047E7B3B7
+2016/04/29 10:43:44 Send ACK - OK, id = 195C890A-0DDE-11E6-926F-A63047E7B3B7
+2016/04/29 10:43:44 Send signal
+2016/04/29 10:58:22 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 10:58:22 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 10:58:22 Start transaction - OK, id = 24F6DFC0-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 10:58:22 Send ACK - OK, id = 24F6DFC0-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 10:58:22 Send signal
+2016/04/29 10:59:47 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 10:59:47 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 10:59:47 Start transaction - OK, id = 5779FFEA-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 10:59:47 Send ACK - OK, id = 5779FFEA-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 10:59:47 Send signal
+2016/04/29 11:01:21 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:01:21 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:01:21 Start transaction - OK, id = 8F659FC2-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 11:01:21 Send ACK - OK, id = 8F659FC2-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 11:01:21 Send signal
+2016/04/29 11:01:55 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:01:55 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:01:55 Start transaction - OK, id = A3D33D16-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 11:01:55 Send ACK - OK, id = A3D33D16-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 11:01:55 Send signal
+2016/04/29 11:02:48 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:02:48 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:02:48 Start transaction - OK, id = C350ED0A-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 11:02:48 Send ACK - OK, id = C350ED0A-0DE0-11E6-926F-A63047E7B3B7
+2016/04/29 11:02:48 Send signal
+2016/04/29 11:04:50 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:04:50 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:04:50 Start transaction - OK, id = 0C121050-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:04:50 Send ACK - OK, id = 0C121050-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:04:50 Send signal
+2016/04/29 11:06:15 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:06:15 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:06:15 Start transaction - OK, id = 3EC04328-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:06:15 Send ACK - OK, id = 3EC04328-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:06:15 Send signal
+2016/04/29 11:06:16 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:06:16 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","date_content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:06:16 Start transaction - OK, id = 3F678DCC-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:06:16 Send ACK - OK, id = 3F678DCC-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:06:16 Send signal
+2016/04/29 11:07:19 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:07:19 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/dir1/dir2/file.txt","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:07:19 Start transaction - OK, id = 64FF9048-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:07:19 Send ACK - OK, id = 64FF9048-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:07:19 Send signal
+2016/04/29 11:07:43 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:07:43 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","/dir3/dir4/","/dir5/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:07:43 Start transaction - OK, id = 730D2286-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:07:43 Send ACK - OK, id = 730D2286-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:07:43 Send signal
+2016/04/29 11:08:07 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:08:07 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:08:07 Start transaction - OK, id = 81824832-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:08:07 Send ACK - OK, id = 81824832-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:08:07 Send signal
+2016/04/29 11:08:52 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:08:52 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:08:52 Start transaction - OK, id = 9CA7B3E0-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:08:52 Send ACK - OK, id = 9CA7B3E0-0DE1-11E6-926F-A63047E7B3B7
+2016/04/29 11:08:52 Send signal
+2016/04/29 11:11:48 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:11:48 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:11:48 Start transaction - OK, id = 05747D40-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:11:48 Send ACK - OK, id = 05747D40-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:11:48 Send signal
+2016/04/29 11:13:51 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:13:51 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:13:51 Start transaction - OK, id = 4ED5CA3E-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:13:51 Send ACK - OK, id = 4ED5CA3E-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:13:51 Send signal
+2016/04/29 11:15:16 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:15:16 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:15:16 Start transaction - OK, id = 816EB2BC-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:15:16 Send ACK - OK, id = 816EB2BC-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:15:16 Send signal
+2016/04/29 11:17:26 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:17:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:17:26 Start transaction - OK, id = CEA890A2-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:17:26 Send ACK - OK, id = CEA890A2-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:17:26 Send signal
+2016/04/29 11:18:06 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:18:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:18:06 Start transaction - OK, id = E67BA0CA-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:18:06 Send ACK - OK, id = E67BA0CA-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:18:06 Send signal
+2016/04/29 11:18:31 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:18:31 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:18:31 Start transaction - OK, id = F58FBAD8-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:18:31 Send ACK - OK, id = F58FBAD8-0DE2-11E6-926F-A63047E7B3B7
+2016/04/29 11:18:31 Send signal
+2016/04/29 11:19:31 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:19:31 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:19:31 Start transaction - OK, id = 19615282-0DE3-11E6-926F-A63047E7B3B7
+2016/04/29 11:19:31 Send ACK - OK, id = 19615282-0DE3-11E6-926F-A63047E7B3B7
+2016/04/29 11:19:31 Send signal
+2016/04/29 11:20:31 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:20:31 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:20:33 Start transaction - OK, id = 3D69C9A2-0DE3-11E6-926F-A63047E7B3B7
+2016/04/29 11:20:33 Send ACK - OK, id = 3D69C9A2-0DE3-11E6-926F-A63047E7B3B7
+2016/04/29 11:20:33 Send signal
+2016/04/29 11:20:33 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:20:33 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:20:33 Start transaction - OK, id = 3E51EC0A-0DE3-11E6-926F-A63047E7B3B7
+2016/04/29 11:20:33 Send ACK - OK, id = 3E51EC0A-0DE3-11E6-926F-A63047E7B3B7
+2016/04/29 11:20:33 Send signal
+2016/04/29 11:21:20 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:21:20 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:21:20 Start transaction - OK, id = 5A3D344C-0DE3-11E6-926F-A63047E7B3B7
+2016/04/29 11:21:20 Send ACK - OK, id = 5A3D344C-0DE3-11E6-926F-A63047E7B3B7
+2016/04/29 11:21:20 Send signal
+2016/04/29 11:30:25 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:30:25 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:30:25 Start transaction - OK, id = 9F59E876-0DE4-11E6-926F-A63047E7B3B7
+2016/04/29 11:30:25 Send ACK - OK, id = 9F59E876-0DE4-11E6-926F-A63047E7B3B7
+2016/04/29 11:30:25 Send signal
+2016/04/29 11:31:12 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:31:12 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:31:12 Start transaction - OK, id = BAEC62DA-0DE4-11E6-926F-A63047E7B3B7
+2016/04/29 11:31:12 Send ACK - OK, id = BAEC62DA-0DE4-11E6-926F-A63047E7B3B7
+2016/04/29 11:31:12 Send signal
+2016/04/29 11:31:58 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:31:58 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:31:58 Start transaction - OK, id = D682BF58-0DE4-11E6-926F-A63047E7B3B7
+2016/04/29 11:31:58 Send ACK - OK, id = D682BF58-0DE4-11E6-926F-A63047E7B3B7
+2016/04/29 11:31:58 Send signal
+2016/04/29 11:43:06 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:43:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:43:06 Start transaction - OK, id = 64B752BA-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:43:06 Send ACK - OK, id = 64B752BA-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:43:06 Send signal
+2016/04/29 11:43:28 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:43:28 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:43:28 Start transaction - OK, id = 71CB5668-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:43:28 Send ACK - OK, id = 71CB5668-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:43:28 Send signal
+2016/04/29 11:43:57 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:43:57 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:43:57 Start transaction - OK, id = 8308528C-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:43:57 Send ACK - OK, id = 8308528C-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:43:57 Send signal
+2016/04/29 11:44:43 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:44:43 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:44:43 Start transaction - OK, id = 9E64EB4E-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:44:43 Send ACK - OK, id = 9E64EB4E-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:44:43 Send signal
+2016/04/29 11:45:00 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:45:00 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:45:00 Start transaction - OK, id = A8C0E110-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:45:00 Send ACK - OK, id = A8C0E110-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:45:00 Send signal
+2016/04/29 11:45:09 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:45:09 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:45:09 Start transaction - OK, id = AE049324-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:45:09 Send ACK - OK, id = AE049324-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:45:09 Send signal
+2016/04/29 11:45:49 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:45:49 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:45:49 Start transaction - OK, id = C61CBC66-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:45:49 Send ACK - OK, id = C61CBC66-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:45:49 Send signal
+2016/04/29 11:47:14 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:47:14 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:47:14 Start transaction - OK, id = F864E0E0-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:47:14 Send ACK - OK, id = F864E0E0-0DE6-11E6-926F-A63047E7B3B7
+2016/04/29 11:47:14 Send signal
+2016/04/29 11:47:44 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:47:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:47:44 Start transaction - OK, id = 0AB0F356-0DE7-11E6-926F-A63047E7B3B7
+2016/04/29 11:47:44 Send ACK - OK, id = 0AB0F356-0DE7-11E6-926F-A63047E7B3B7
+2016/04/29 11:47:44 Send signal
+2016/04/29 11:48:19 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc",],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:19 Decode from json - Error: <malformed JSON string, neither array, object, number, string or atom, at character offset 197 (before "],"replace":1,"rsync...") at /usr/local/fmqueue/bin/insert_worker.pl line 48.
+>, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc",],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:28 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc",],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:28 Decode from json - Error: <malformed JSON string, neither array, object, number, string or atom, at character offset 197 (before "],"replace":1,"rsync...") at /usr/local/fmqueue/bin/insert_worker.pl line 48.
+>, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc",],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:35 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc",],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:35 Decode from json - Error: <malformed JSON string, neither array, object, number, string or atom, at character offset 197 (before "],"replace":1,"rsync...") at /usr/local/fmqueue/bin/insert_worker.pl line 48.
+>, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc",],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:38 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc",],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:38 Decode from json - Error: <malformed JSON string, neither array, object, number, string or atom, at character offset 197 (before "],"replace":1,"rsync...") at /usr/local/fmqueue/bin/insert_worker.pl line 48.
+>, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc",],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:52 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:52 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:48:52 Start transaction - OK, id = 33300420-0DE7-11E6-926F-A63047E7B3B7
+2016/04/29 11:48:52 Send ACK - OK, id = 33300420-0DE7-11E6-926F-A63047E7B3B7
+2016/04/29 11:48:52 Send signal
+2016/04/29 11:49:37 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:49:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 11:49:37 Start transaction - OK, id = 4E0C1AA4-0DE7-11E6-926F-A63047E7B3B7
+2016/04/29 11:49:37 Send ACK - OK, id = 4E0C1AA4-0DE7-11E6-926F-A63047E7B3B7
+2016/04/29 11:49:37 Send signal
+2016/04/29 14:27:49 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:27:49 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:27:49 Start transaction - OK, id = 674CBF58-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:27:49 Send ACK - OK, id = 674CBF58-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:27:49 Send signal
+2016/04/29 14:28:45 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:28:45 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:28:45 Start transaction - OK, id = 890C8C68-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:28:45 Send ACK - OK, id = 890C8C68-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:28:45 Send signal
+2016/04/29 14:30:33 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:30:33 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/","etc"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:30:33 Start transaction - OK, id = C94C68B6-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:30:33 Send ACK - OK, id = C94C68B6-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:30:33 Send signal
+2016/04/29 14:30:57 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:30:57 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:30:57 Start transaction - OK, id = D77F9340-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:30:57 Send ACK - OK, id = D77F9340-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:30:57 Send signal
+2016/04/29 14:31:26 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:31:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":1,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:31:26 Start transaction - OK, id = E8A65334-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:31:26 Send ACK - OK, id = E8A65334-0DFD-11E6-926F-A63047E7B3B7
+2016/04/29 14:31:26 Send signal
+2016/04/29 14:33:39 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:33:39 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:33:39 Start transaction - OK, id = 37CE052E-0DFE-11E6-926F-A63047E7B3B7
+2016/04/29 14:33:39 Send ACK - OK, id = 37CE052E-0DFE-11E6-926F-A63047E7B3B7
+2016/04/29 14:33:39 Send signal
+2016/04/29 14:34:10 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:34:10 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:34:10 Start transaction - OK, id = 4AA4E35C-0DFE-11E6-926F-A63047E7B3B7
+2016/04/29 14:34:10 Send ACK - OK, id = 4AA4E35C-0DFE-11E6-926F-A63047E7B3B7
+2016/04/29 14:34:10 Send signal
+2016/04/29 14:47:37 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:47:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 14:47:37 Start transaction - OK, id = 2BC6C7E6-0E00-11E6-926F-A63047E7B3B7
+2016/04/29 14:47:37 Send ACK - OK, id = 2BC6C7E6-0E00-11E6-926F-A63047E7B3B7
+2016/04/29 14:47:37 Send signal
+2016/04/29 15:29:15 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:29:15 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:29:15 Start transaction - OK, id = FC6FA156-0E05-11E6-926F-A63047E7B3B7
+2016/04/29 15:29:15 Send ACK - OK, id = FC6FA156-0E05-11E6-926F-A63047E7B3B7
+2016/04/29 15:29:15 Send signal
+2016/04/29 15:48:00 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:48:00 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","date":"201604281503","content_list":["/backuper.nichost.ru/"],"replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:48:00 Start transaction - OK, id = 9AD65E8C-0E08-11E6-926F-A63047E7B3B7
+2016/04/29 15:48:00 Send ACK - OK, id = 9AD65E8C-0E08-11E6-926F-A63047E7B3B7
+2016/04/29 15:48:00 Send signal
+2016/04/29 15:57:50 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:57:50 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:57:50 Start transaction - OK, id = FA6BF2DE-0E09-11E6-926F-A63047E7B3B7
+2016/04/29 15:57:50 Send ACK - OK, id = FA6BF2DE-0E09-11E6-926F-A63047E7B3B7
+2016/04/29 15:57:50 Send signal
+2016/04/29 15:58:06 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:06 Start transaction - OK, id = 041FF1FE-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:06 Send ACK - OK, id = 041FF1FE-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:06 Send signal
+2016/04/29 15:58:36 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:36 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:36 Start transaction - OK, id = 16217A12-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:36 Send ACK - OK, id = 16217A12-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:36 Send signal
+2016/04/29 15:58:36 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:36 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:36 Start transaction - OK, id = 163D6556-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:36 Send ACK - OK, id = 163D6556-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:36 Send signal
+2016/04/29 15:58:36 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:36 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:36 Start transaction - OK, id = 1657A8BC-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:36 Send ACK - OK, id = 1657A8BC-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:36 Send signal
+2016/04/29 15:58:37 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Start transaction - OK, id = 16722DC2-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send ACK - OK, id = 16722DC2-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send signal
+2016/04/29 15:58:37 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Start transaction - OK, id = 168DC12C-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send ACK - OK, id = 168DC12C-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send signal
+2016/04/29 15:58:37 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Start transaction - OK, id = 16A8AF1E-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send ACK - OK, id = 16A8AF1E-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send signal
+2016/04/29 15:58:37 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Start transaction - OK, id = 16C6A32A-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send ACK - OK, id = 16C6A32A-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send signal
+2016/04/29 15:58:37 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Start transaction - OK, id = 16E456D6-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send ACK - OK, id = 16E456D6-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send signal
+2016/04/29 15:58:37 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:37 Start transaction - OK, id = 16FD137E-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send ACK - OK, id = 16FD137E-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:37 Send signal
+2016/04/29 15:58:38 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:38 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:38 Start transaction - OK, id = 17189C16-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:38 Send ACK - OK, id = 17189C16-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:38 Send signal
+2016/04/29 15:58:38 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:38 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:38 Start transaction - OK, id = 1737E134-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:38 Send ACK - OK, id = 1737E134-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:38 Send signal
+2016/04/29 15:58:53 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Start transaction - OK, id = 203AB3A6-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:53 Send ACK - OK, id = 203AB3A6-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:53 Send signal
+2016/04/29 15:58:53 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Start transaction - OK, id = 2053E0E2-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:53 Send ACK - OK, id = 2053E0E2-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:53 Send signal
+2016/04/29 15:58:53 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Start transaction - OK, id = 206F323E-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:53 Send ACK - OK, id = 206F323E-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:53 Send signal
+2016/04/29 15:58:53 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:53 Start transaction - OK, id = 208762E6-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:53 Send ACK - OK, id = 208762E6-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:53 Send signal
+2016/04/29 15:58:54 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Start transaction - OK, id = 20A0E536-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send ACK - OK, id = 20A0E536-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send signal
+2016/04/29 15:58:54 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Start transaction - OK, id = 20B9F80A-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send ACK - OK, id = 20B9F80A-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send signal
+2016/04/29 15:58:54 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Start transaction - OK, id = 20D6584C-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send ACK - OK, id = 20D6584C-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send signal
+2016/04/29 15:58:54 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Start transaction - OK, id = 20EE8926-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send ACK - OK, id = 20EE8926-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send signal
+2016/04/29 15:58:54 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Start transaction - OK, id = 2109F800-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send ACK - OK, id = 2109F800-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send signal
+2016/04/29 15:58:54 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:54 Start transaction - OK, id = 21221CDC-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send ACK - OK, id = 21221CDC-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:54 Send signal
+2016/04/29 15:58:55 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:55 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:55 Start transaction - OK, id = 213FD510-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:55 Send ACK - OK, id = 213FD510-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:55 Send signal
+2016/04/29 15:58:55 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:55 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:55 Start transaction - OK, id = 215858BA-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:55 Send ACK - OK, id = 215858BA-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:55 Send signal
+2016/04/29 15:58:55 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:55 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 15:58:55 Start transaction - OK, id = 217855D4-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:55 Send ACK - OK, id = 217855D4-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 15:58:55 Send signal
+2016/04/29 16:01:04 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:04 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:04 Start transaction - OK, id = 6E83A018-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:04 Send ACK - OK, id = 6E83A018-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:04 Send signal
+2016/04/29 16:01:04 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:04 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:04 Start transaction - OK, id = 6E9BF91A-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:04 Send ACK - OK, id = 6E9BF91A-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:04 Send signal
+2016/04/29 16:01:05 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Start transaction - OK, id = 6EB5AB44-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send ACK - OK, id = 6EB5AB44-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send signal
+2016/04/29 16:01:05 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Start transaction - OK, id = 6ED1539E-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send ACK - OK, id = 6ED1539E-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send signal
+2016/04/29 16:01:05 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Start transaction - OK, id = 6EEC4848-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send ACK - OK, id = 6EEC4848-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send signal
+2016/04/29 16:01:05 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Start transaction - OK, id = 6F07D7F2-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send ACK - OK, id = 6F07D7F2-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send signal
+2016/04/29 16:01:05 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:01:05 Start transaction - OK, id = 6F29328A-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send ACK - OK, id = 6F29328A-0E0A-11E6-926F-A63047E7B3B7
+2016/04/29 16:01:05 Send signal
+2016/04/29 16:20:32 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:20:32 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:20:32 Start transaction - OK, id = 268D3F8C-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:20:32 Send ACK - OK, id = 268D3F8C-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:20:32 Send signal
+2016/04/29 16:21:40 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Start transaction - OK, id = 4ED04340-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send ACK - OK, id = 4ED04340-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send signal
+2016/04/29 16:21:40 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Start transaction - OK, id = 4EEC5508-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send ACK - OK, id = 4EEC5508-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send signal
+2016/04/29 16:21:40 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Start transaction - OK, id = 4F07808A-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send ACK - OK, id = 4F07808A-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send signal
+2016/04/29 16:21:40 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Start transaction - OK, id = 4F21C756-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send ACK - OK, id = 4F21C756-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send signal
+2016/04/29 16:21:40 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:40 Start transaction - OK, id = 4F419874-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send ACK - OK, id = 4F419874-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:40 Send signal
+2016/04/29 16:21:41 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:41 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:41 Start transaction - OK, id = 4F6AD478-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:41 Send ACK - OK, id = 4F6AD478-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:41 Send signal
+2016/04/29 16:21:44 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Start transaction - OK, id = 5130491E-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:44 Send ACK - OK, id = 5130491E-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:44 Send signal
+2016/04/29 16:21:44 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Start transaction - OK, id = 5148FFD6-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:44 Send ACK - OK, id = 5148FFD6-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:44 Send signal
+2016/04/29 16:21:44 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Start transaction - OK, id = 51641E60-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:44 Send ACK - OK, id = 51641E60-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:44 Send signal
+2016/04/29 16:21:44 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:21:44 Start transaction - OK, id = 517F0022-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:44 Send ACK - OK, id = 517F0022-0E0D-11E6-926F-A63047E7B3B7
+2016/04/29 16:21:44 Send signal
+2016/04/29 16:33:10 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:10 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:10 Start transaction - OK, id = EA459220-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:10 Send ACK - OK, id = EA459220-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:10 Send signal
+2016/04/29 16:33:10 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:10 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:10 Start transaction - OK, id = EA88527C-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:10 Send ACK - OK, id = EA88527C-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:10 Send signal
+2016/04/29 16:33:11 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:11 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:11 Start transaction - OK, id = EABCD3F8-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:11 Send ACK - OK, id = EABCD3F8-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:11 Send signal
+2016/04/29 16:33:12 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:12 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:12 Start transaction - OK, id = EBA4D6B2-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:12 Send ACK - OK, id = EBA4D6B2-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:12 Send signal
+2016/04/29 16:33:13 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:13 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:13 Start transaction - OK, id = EBE25CD0-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:13 Send ACK - OK, id = EBE25CD0-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:13 Send signal
+2016/04/29 16:33:13 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:13 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:33:13 Start transaction - OK, id = EC426058-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:13 Send ACK - OK, id = EC426058-0E0E-11E6-926F-A63047E7B3B7
+2016/04/29 16:33:13 Send signal
+2016/04/29 16:39:22 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:39:22 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:39:22 Start transaction - OK, id = C82895A6-0E0F-11E6-926F-A63047E7B3B7
+2016/04/29 16:39:22 Send ACK - OK, id = C82895A6-0E0F-11E6-926F-A63047E7B3B7
+2016/04/29 16:39:22 Send signal
+2016/04/29 16:39:43 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:39:43 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:39:43 Start transaction - OK, id = D4622792-0E0F-11E6-926F-A63047E7B3B7
+2016/04/29 16:39:43 Send ACK - OK, id = D4622792-0E0F-11E6-926F-A63047E7B3B7
+2016/04/29 16:39:43 Send signal
+2016/04/29 16:42:09 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:42:09 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:42:09 Start transaction - OK, id = 2BBFCAD0-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:42:09 Send ACK - OK, id = 2BBFCAD0-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:42:09 Send signal
+2016/04/29 16:42:16 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:42:16 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:42:16 Start transaction - OK, id = 2FEDAB22-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:42:16 Send ACK - OK, id = 2FEDAB22-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:42:16 Send signal
+2016/04/29 16:42:50 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:42:50 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:42:50 Start transaction - OK, id = 43BD6E3A-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:42:50 Send ACK - OK, id = 43BD6E3A-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:42:50 Send signal
+2016/04/29 16:43:20 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:43:20 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:43:20 Start transaction - OK, id = 562682AA-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:43:20 Send ACK - OK, id = 562682AA-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:43:20 Send signal
+2016/04/29 16:43:57 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:43:57 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:43:57 Start transaction - OK, id = 6BED6270-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:43:57 Send ACK - OK, id = 6BED6270-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:43:57 Send signal
+2016/04/29 16:44:18 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:44:18 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:44:18 Start transaction - OK, id = 78AB4414-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:44:18 Send ACK - OK, id = 78AB4414-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:44:18 Send signal
+2016/04/29 16:45:12 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:45:12 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:45:12 Start transaction - OK, id = 98A1B8A2-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:45:12 Send ACK - OK, id = 98A1B8A2-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:45:12 Send signal
+2016/04/29 16:47:15 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:15 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:15 Start transaction - OK, id = E1DDDFDC-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:47:15 Send ACK - OK, id = E1DDDFDC-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:47:15 Send signal
+2016/04/29 16:47:31 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:31 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:31 Start transaction - OK, id = EB472F10-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:47:31 Send ACK - OK, id = EB472F10-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:47:31 Send signal
+2016/04/29 16:47:32 Receive message - OK. Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:32 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web01","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:32 Start transaction - OK, id = EC1D3894-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:47:32 Send ACK - OK, id = EC1D3894-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:47:32 Send signal
+2016/04/29 16:47:45 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:45 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:47:45 Start transaction - OK, id = F4160C60-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:47:45 Send ACK - OK, id = F4160C60-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:47:45 Send signal
+2016/04/29 16:48:02 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:02 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:02 Start transaction - OK, id = FE11AA3A-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:48:02 Send ACK - OK, id = FE11AA3A-0E10-11E6-926F-A63047E7B3B7
+2016/04/29 16:48:02 Send signal
+2016/04/29 16:48:38 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:38 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:38 Start transaction - OK, id = 13921A7A-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:48:38 Send ACK - OK, id = 13921A7A-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:48:38 Send signal
+2016/04/29 16:48:49 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:49 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:49 Start transaction - OK, id = 1A1FF650-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:48:49 Send ACK - OK, id = 1A1FF650-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:48:49 Send signal
+2016/04/29 16:48:59 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:59 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:48:59 Start transaction - OK, id = 202B7240-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:48:59 Send ACK - OK, id = 202B7240-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:48:59 Send signal
+2016/04/29 16:49:07 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:07 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:07 Start transaction - OK, id = 24D7A8FE-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:07 Send ACK - OK, id = 24D7A8FE-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:07 Send signal
+2016/04/29 16:49:15 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:15 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:15 Start transaction - OK, id = 299B1952-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:15 Send ACK - OK, id = 299B1952-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:15 Send signal
+2016/04/29 16:49:21 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:21 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:21 Start transaction - OK, id = 2D13D95C-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:21 Send ACK - OK, id = 2D13D95C-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:21 Send signal
+2016/04/29 16:49:22 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:22 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:22 Start transaction - OK, id = 2DE16B38-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:22 Send ACK - OK, id = 2DE16B38-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:22 Send signal
+2016/04/29 16:49:23 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:23 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:23 Start transaction - OK, id = 2E436D6A-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:23 Send ACK - OK, id = 2E436D6A-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:23 Send signal
+2016/04/29 16:49:23 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:23 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:23 Start transaction - OK, id = 2E8F0676-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:23 Send ACK - OK, id = 2E8F0676-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:23 Send signal
+2016/04/29 16:49:24 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:24 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:24 Start transaction - OK, id = 2ECD0098-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:24 Send ACK - OK, id = 2ECD0098-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:24 Send signal
+2016/04/29 16:49:24 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:24 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:24 Start transaction - OK, id = 2F019BBE-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:24 Send ACK - OK, id = 2F019BBE-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:24 Send signal
+2016/04/29 16:49:25 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:25 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:25 Start transaction - OK, id = 2F846936-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:25 Send ACK - OK, id = 2F846936-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:25 Send signal
+2016/04/29 16:49:25 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:25 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:25 Start transaction - OK, id = 2FBDBDF8-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:25 Send ACK - OK, id = 2FBDBDF8-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:25 Send signal
+2016/04/29 16:49:26 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:26 Start transaction - OK, id = 2FF1DB06-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:26 Send ACK - OK, id = 2FF1DB06-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:26 Send signal
+2016/04/29 16:49:26 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:26 Start transaction - OK, id = 3022B262-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:26 Send ACK - OK, id = 3022B262-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:26 Send signal
+2016/04/29 16:49:26 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:26 Start transaction - OK, id = 304EAF2A-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:26 Send ACK - OK, id = 304EAF2A-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:26 Send signal
+2016/04/29 16:49:27 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:27 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:27 Start transaction - OK, id = 3070B16A-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:27 Send ACK - OK, id = 3070B16A-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:27 Send signal
+2016/04/29 16:49:56 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:56 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_server":"tst105-backup01.vm.rcdn.ru","content_list":["/backuper.nichost.ru/"],"date":"201604281503","replace":0,"rsync_password":"95cea3036b964d8fafe8d1caf2a8214a"},"command":"restore_backup"}}
+2016/04/29 16:49:56 Start transaction - OK, id = 4225D1BA-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:56 Send ACK - OK, id = 4225D1BA-0E11-11E6-926F-A63047E7B3B7
+2016/04/29 16:49:56 Send signal
+2016/04/29 17:10:27 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:10:27 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:10:27 Start transaction - OK, id = 1FD5FED4-0E14-11E6-926F-A63047E7B3B7
+2016/04/29 17:10:27 Send ACK - OK, id = 1FD5FED4-0E14-11E6-926F-A63047E7B3B7
+2016/04/29 17:10:27 Send signal
+2016/04/29 17:17:04 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:17:04 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:17:04 Start transaction - OK, id = 0C3A4FDC-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:17:04 Send ACK - OK, id = 0C3A4FDC-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:17:04 Send signal
+2016/04/29 17:18:45 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:18:45 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:18:45 Start transaction - OK, id = 4849E0A0-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:18:45 Send ACK - OK, id = 4849E0A0-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:18:45 Send signal
+2016/04/29 17:22:06 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:22:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:22:06 Start transaction - OK, id = C01B303E-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:22:06 Send ACK - OK, id = C01B303E-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:22:06 Send signal
+2016/04/29 17:23:03 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:23:03 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:23:03 Start transaction - OK, id = E206E44A-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:23:03 Send ACK - OK, id = E206E44A-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:23:03 Send signal
+2016/04/29 17:23:43 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:23:43 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:23:43 Start transaction - OK, id = F9DFD16C-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:23:43 Send ACK - OK, id = F9DFD16C-0E15-11E6-926F-A63047E7B3B7
+2016/04/29 17:23:43 Send signal
+2016/04/29 17:24:08 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:24:08 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:24:08 Start transaction - OK, id = 091664F2-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:24:08 Send ACK - OK, id = 091664F2-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:24:08 Send signal
+2016/04/29 17:25:26 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:25:26 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:25:26 Start transaction - OK, id = 374E2D1E-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:25:26 Send ACK - OK, id = 374E2D1E-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:25:26 Send signal
+2016/04/29 17:26:06 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:26:06 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:26:06 Start transaction - OK, id = 4FA64E82-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:26:06 Send ACK - OK, id = 4FA64E82-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:26:06 Send signal
+2016/04/29 17:27:28 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:27:28 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:27:28 Start transaction - OK, id = 8052559E-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:27:28 Send ACK - OK, id = 8052559E-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:27:28 Send signal
+2016/04/29 17:28:14 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:28:14 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:28:14 Start transaction - OK, id = 9BE7D5EA-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:28:14 Send ACK - OK, id = 9BE7D5EA-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:28:14 Send signal
+2016/04/29 17:29:01 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:29:01 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:29:01 Start transaction - OK, id = B7F2AECC-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:29:01 Send ACK - OK, id = B7F2AECC-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:29:01 Send signal
+2016/04/29 17:29:18 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:29:18 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:29:18 Start transaction - OK, id = C196C5A8-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:29:18 Send ACK - OK, id = C196C5A8-0E16-11E6-926F-A63047E7B3B7
+2016/04/29 17:29:18 Send signal
+2016/04/29 17:34:16 Receive message - OK. Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:34:16 Decode from json - OK, Body: {"account":"backuper","address":"tst100-web00","data":{"args":{"ACCOUNT":"backuper","backup_dir":"docs_2016_04_29_14_45_26","cms_admin_email":"postmaster@sfgvsugb.ru.stage01.vm.rcdn.ru","cms_admin_login":"joomadm","cms_admin_pass":"OXS8tx+x","cms_site_lang":"ru-RU","db_host":"backuper.mysql","db_name":"backuper_db","db_tables_prefix":"joomla_","db_type":"mysql","db_username":"backuper_mysql","db_username_pass":"X:uccMp7","file_name":"joomla-3.5.1-20.app.zip","site_name":"backuper.nichost.ru"},"command":"install_cms"}}
+2016/04/29 17:34:16 Start transaction - OK, id = 738D68D4-0E17-11E6-926F-A63047E7B3B7
+2016/04/29 17:34:16 Send ACK - OK, id = 738D68D4-0E17-11E6-926F-A63047E7B3B7
+2016/04/29 17:34:16 Send signal
