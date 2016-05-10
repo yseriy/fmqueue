@@ -24,12 +24,28 @@ sub new {
     return bless $self, $class;
 }
 
-sub connect_parameters {
-    my ( $self, $hostname, $options, $qos_options ) = @_;
+sub hostname {
+    my ( $self, $hostname ) = @_;
 
-    $self->{hostname}    = $hostname    || '';
-    $self->{options}     = $options     || {};
-    $self->{qos_options} = $qos_options || {};
+    $self->{hostname} = $hostname if $hostname;
+
+    return $self;
+}
+
+sub options {
+    my ( $self, $options ) = @_;
+
+    $self->{options} = $options if ref $options eq "HASH";
+
+    return $self;
+}
+
+sub qos {
+    my ( $self, $qos_options ) = @_;
+
+    $self->{qos_options} = $qos_options if ref $qos_options eq "HASH";
+
+    return $self;
 }
 
 sub connect {
@@ -52,7 +68,7 @@ sub reconnect {
     $self->connect if ! $self->{mq}->is_connected;
 }
 
-sub connect_queue {
+sub open_queue {
     my ( $self, $queue ) = @_;
 
     $self->{mq}->queue_declare(
@@ -62,10 +78,14 @@ sub connect_queue {
     );
 }
 
-sub disconnect_queue {
+sub close_queue {
     my ( $self, $queue ) = @_;
 
-    queue_delete( $self->{channel}, $queue, $queue->disconnect_options );
+    $self->{mq}->queue_delete(
+        $self->{channel},
+        $queue->name,
+        $queue->disconnect_options
+    );
 }
 
 sub listen_queue {
@@ -78,7 +98,7 @@ sub listen_queue {
     );
 }
 
-sub cancel_listen {
+sub cancel_listen_queue {
     my ( $self, $queue ) = @_;
 
     $self->{mq}->cancel( $self->{channel}, $self->{consumer_tag} );
@@ -102,6 +122,12 @@ sub receive {
     return $self->{message_factory}->message->from_hashref(
         $self->{mq}->recv($self->{timeout})
     );
+}
+
+sub ack {
+    my ( $self, $message ) = @_;
+
+    $self->{mq}->ack( $self->{channel}, $message->info->{delivery_tag} );
 }
 
 1;
