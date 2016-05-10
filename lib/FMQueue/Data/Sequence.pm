@@ -18,7 +18,7 @@ sub new {
 sub from_string {
     my ( $self, $string ) = @_;
 
-    my $sequence = $coder->decode($string);
+    my $sequence = $self->{coder}->decode($string);
 
     $self->{id}    = $sequence->{id};
     $self->{tasks} = $sequence->{tasks};
