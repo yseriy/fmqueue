@@ -4,12 +4,12 @@ use strict;
 use warnings;
 
 sub new {
-    my ( $class, $coder ) = @_;
+    my ($class) = @_;
 
     my $self = {};
 
-    $self->{coder} = $coder;
-
+    $self->{coder}   = '';
+    $self->{seq_id}  = '';
     $self->{task_id} = '';
     $self->{address} = '';
     $self->{user_id} = '';
@@ -19,16 +19,53 @@ sub new {
     return bless $self, $class;
 }
 
+sub coder {
+    my ( $self, $coder ) = @_;
+
+    $self->{coder} = $coder if defined $coder;
+
+    return $self;
+}
+
+sub from_message {
+    my ( $self, $message ) = @_;
+
+    $self->from_string($message->to_string);
+
+    return $self;
+}
+
 sub from_string {
     my ( $self, $string ) = @_;
 
-    my $task = $self->{coder}->decode($string);
+    $self->from_hashref( $self->{coder}->decode($string) );
 
-    $self->{task_id} = $task->{task_id} || '';
-    $self->{address} = $task->{address} || '';
-    $self->{user_id} = $task->{user_id} || '';
-    $self->{data}    = $task->{data};
-    $self->{result}  = $task->{result};
+    return $self;
+}
+
+sub from_hashref {
+    my ( $self, $hashref ) = @_;
+
+    $self->{seq_id}  = $hashref->{id}      || '';
+    $self->{task_id} = $hashref->{task_id} || '';
+    $self->{address} = $hashref->{address} || '';
+    $self->{user_id} = $hashref->{user_id} || '';
+    $self->{data}    = $hashref->{data};
+    $self->{result}  = $hashref->{result};
+
+    return $self;
+}
+
+sub to_string {
+    my ($self) = @_;
+
+    return $self->{coder}->encode($self);
+}
+
+sub seq_id {
+    my ($self) = @_;
+
+    return $self->{seq_id};
 }
 
 sub task_id {

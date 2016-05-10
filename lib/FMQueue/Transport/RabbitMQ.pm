@@ -90,7 +90,7 @@ sub send {
     $self->{mq}->publish(
         $self->{channel},
         $queue->name,
-        $message->body,
+        $message->to_string,
         $message->send_options,
         $message->properties
     );
@@ -99,7 +99,7 @@ sub send {
 sub receive {
     my ($self) = @_;
 
-    return $self->{message_factory}->message(
+    return $self->{message_factory}->message->from_hashref(
         $self->{mq}->recv($self->{timeout})
     );
 }

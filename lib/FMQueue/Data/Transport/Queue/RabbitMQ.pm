@@ -4,11 +4,11 @@ use strict;
 use warnings;
 
 sub new {
-    my ( $class, $name ) = @_;
+    my ($class) = @_;
 
     my $self = {};
 
-    $self->{name} = $name || '';
+    $self->{name} = '';
     $self->{connect_options} = {};
     $self->{disconnect_options} = {};
     $self->{listen_options} = {};
@@ -19,7 +19,10 @@ sub new {
 sub name {
     my ( $self, $name ) = @_;
 
-    $self->{name} = $name if $name;
+    if ($name) {
+        $self->{name} = $name;
+        return $self;
+    }
 
     return $self->{name};
 }

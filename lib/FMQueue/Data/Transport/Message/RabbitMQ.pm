@@ -4,32 +4,38 @@ use strict;
 use warnings;
 
 sub new {
-    my ( $class, $raw_message ) = @_;
+    my ($class) = @_;
 
     my $self = {};
 
-    if ( defined $raw_message ) {
-        $self->{body} = delete $raw_message->{body};
-        $self->{properties} = delete $raw_message->{props};
-        $self->{info} = $raw_message;
-        $self->{send_options} = {};
-    }
-    else {
-        $self->{body} = {};
-        $self->{properties} = {};
-        $self->{info} = {};
-        $self->{send_options} = {};
-    }
+    $self->{body} = '';
+    $self->{properties} = {};
+    $self->{info} = {};
+    $self->{send_options} = {};
 
     return bless $self, $class;
 }
 
-sub body {
-    my ( $self, $body ) = @_;
+sub from_hashref {
+    my ( $self, $hashref ) = @_;
 
-    $self->{body} = $body if defined $body;
+    $self->{body} = delete $hashref->{body} || '';
+    $self->{properties} = delete $hashref->{props};
+    $self->{info} = $hashref;
+
+    return $self;
+}
+
+sub to_string {
+    my ($self) = @_;
 
     return $self->{body};
+}
+
+sub load_task {
+    my ( $self, $task ) = @_;
+
+    $self->{body} = $task->to_string;
 }
 
 sub properties {
