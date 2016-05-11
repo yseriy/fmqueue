@@ -68,7 +68,7 @@ sub reconnect {
     $self->connect if ! $self->{mq}->is_connected;
 }
 
-sub open_queue {
+sub create_queue {
     my ( $self, $queue ) = @_;
 
     $self->{mq}->queue_declare(
@@ -78,7 +78,7 @@ sub open_queue {
     );
 }
 
-sub close_queue {
+sub delete_queue {
     my ( $self, $queue ) = @_;
 
     $self->{mq}->queue_delete(

@@ -8,13 +8,7 @@ sub new {
 
     my $self = {};
 
-    $self->{coder}   = '';
-    $self->{seq_id}  = '';
-    $self->{task_id} = '';
-    $self->{address} = '';
-    $self->{user_id} = '';
-    $self->{data}    = {};
-    $self->{result}  = {};
+    $self->{keys} = [qw{id task_id address data result}];
 
     return bless $self, $class;
 }
@@ -46,12 +40,9 @@ sub from_string {
 sub from_hashref {
     my ( $self, $hashref ) = @_;
 
-    $self->{seq_id}  = $hashref->{id}      || '';
-    $self->{task_id} = $hashref->{task_id} || '';
-    $self->{address} = $hashref->{address} || '';
-    $self->{user_id} = $hashref->{user_id} || '';
-    $self->{data}    = $hashref->{data};
-    $self->{result}  = $hashref->{result};
+    foreach my $key (@{$self->{keys}}) {
+        $self->{$key} = $hashref->{$key};
+    }
 
     return $self;
 }
@@ -59,15 +50,21 @@ sub from_hashref {
 sub to_string {
     my ($self) = @_;
 
-    return $self->{coder}->encode($self);
+    my $tasks = {};
+
+    foreach my $key (@{$self->{keys}}) {
+        $tasks->{$key} = $self->{$key};
+    }
+
+    return $self->{coder}->encode($tasks);
 }
 
 sub seq_id {
     my ( $self, $seq_id ) = @_;
 
-    $self->{seq_id} = $seq_id if $seq_id;
+    $self->{id} = $seq_id if $seq_id;
 
-    return $self->{seq_id};
+    return $self->{id};
 }
 
 sub task_id {
