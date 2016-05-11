@@ -8,9 +8,10 @@ sub new {
 
     my $self = {};
 
-    $self->{id}    = '';
-    $self->{tasks} = [];
-    $self->{coder} = $coder;
+    $self->{id}      = '';
+    $self->{user_id} = '';
+    $self->{tasks}   = [];
+    $self->{coder}   = $coder;
     $self->{generator} = $generator;
     $self->{task_factory} = $task_factory;
 
@@ -31,9 +32,13 @@ sub from_string {
     my $sequence = $self->{coder}->decode($string);
 
     $self->{id} = $sequence->{id} || $self->{generator}->id;
+    $self->{user_id} = $sequence->{user_id};
 
     foreach my $hashref (@{$sequence->{tasks}}) {
-        my $task = $self->{task_factory}->task->from_hashref($hashref);
+        my $task = $self->{task_factory}->task;
+
+        $task->coder($self->{coder});
+        $task->from_hashref($hashref);
 
         $task->seq_id($self->{id});
         $task->task_id($self->{generator}->id);
@@ -48,6 +53,12 @@ sub id {
     my ($self) = @_;
 
     return $self->{id};
+}
+
+sub user_id {
+    my ($self) = @_;
+
+    return $self->{user_id};
 }
 
 sub tasks {
