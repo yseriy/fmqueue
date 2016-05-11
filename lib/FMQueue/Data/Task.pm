@@ -63,13 +63,17 @@ sub to_string {
 }
 
 sub seq_id {
-    my ($self) = @_;
+    my ( $self, $seq_id ) = @_;
+
+    $self->{seq_id} = $seq_id if $seq_id;
 
     return $self->{seq_id};
 }
 
 sub task_id {
-    my ($self) = @_;
+    my ( $self, $task_id ) = @_;
+
+    $self->{task_id} = $task_id if $task_id;
 
     return $self->{task_id};
 }

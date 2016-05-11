@@ -4,13 +4,14 @@ use strict;
 use warnings;
 
 sub new {
-    my ( $class, $task_factory, $coder ) = @_;
+    my ( $class, $task_factory, $coder, $generator ) = @_;
 
     my $self = {};
 
     $self->{id}    = '';
     $self->{tasks} = [];
     $self->{coder} = $coder;
+    $self->{generator} = $generator;
     $self->{task_factory} = $task_factory;
 
     return bless $self, $class;
@@ -29,10 +30,14 @@ sub from_string {
 
     my $sequence = $self->{coder}->decode($string);
 
-    $self->{id} = $sequence->{id};
+    $self->{id} = $sequence->{id} || $self->{generator}->id;
 
     foreach my $hashref (@{$sequence->{tasks}}) {
         my $task = $self->{task_factory}->task->from_hashref($hashref);
+
+        $task->seq_id($self->{id});
+        $task->task_id($self->{generator}->id);
+
         push @{$self->{tasks}}, $task;
     }
 
