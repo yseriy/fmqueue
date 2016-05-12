@@ -14,7 +14,7 @@ sub new {
 sub task {
     my ($self) = @_;
 
-    return FMQueue::Data::Task->new;
+    return FMQueue::Data::Task->new->init;
 }
 
 1;

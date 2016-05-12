@@ -6,25 +6,21 @@ use warnings;
 sub new {
     my ($class) = @_;
 
-    my $self = {};
+    return bless {}, $class;
+}
 
-    $self->{keys} = [qw{id task_id address data result}];
+sub init {
+    my ($self) = @_;
 
-    return bless $self, $class;
+    $self->{keys} = [qw{id seq_id address step seq_size data result}];
+
+    return $self;
 }
 
 sub coder {
     my ( $self, $coder ) = @_;
 
     $self->{coder} = $coder if defined $coder;
-
-    return $self;
-}
-
-sub from_message {
-    my ( $self, $message ) = @_;
-
-    $self->from_string($message->to_string);
 
     return $self;
 }
@@ -50,29 +46,29 @@ sub from_hashref {
 sub to_string {
     my ($self) = @_;
 
-    my $tasks = {};
+    my $task = {};
 
     foreach my $key (@{$self->{keys}}) {
-        $tasks->{$key} = $self->{$key};
+        $task->{$key} = $self->{$key};
     }
 
-    return $self->{coder}->encode($tasks);
+    return $self->{coder}->encode($task);
+}
+
+sub id {
+    my ( $self, $id ) = @_;
+
+    $self->{id} = $id if $id;
+
+    return $self->{id};
 }
 
 sub seq_id {
     my ( $self, $seq_id ) = @_;
 
-    $self->{id} = $seq_id if $seq_id;
+    $self->{seq_id} = $seq_id if $seq_id;
 
-    return $self->{id};
-}
-
-sub task_id {
-    my ( $self, $task_id ) = @_;
-
-    $self->{task_id} = $task_id if $task_id;
-
-    return $self->{task_id};
+    return $self->{seq_id};
 }
 
 sub address {
@@ -81,10 +77,20 @@ sub address {
     return $self->{address};
 }
 
-sub user_id {
-    my ($self) = @_;
+sub step {
+    my ( $self, $step ) = @_;
 
-    return $self->{user_id};
+    $self->{step} = $step if $step;
+
+    return $self->{step};
+}
+
+sub seq_size {
+    my ( $self, $seq_size ) = @_;
+
+    $self->{seq_size} = $seq_size if $seq_size;
+
+    return $self->{seq_size};
 }
 
 sub result {
