@@ -99,4 +99,16 @@ sub result {
     return $self->{result};
 }
 
+sub is_last_task {
+    my ($self) = @_;
+
+    return ( $self->{seq_size} - $self->{step} ) ? 0 : 1;
+}
+
+sub is_status_error {
+    my ($self) = @_;
+
+    return $self->{result}->{rc} ? 1 : 0;
+}
+
 1;
