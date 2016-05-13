@@ -81,10 +81,12 @@ sub _insert_task {
             start_timestamp,status_timestamp) VALUES(?,?,?,?,?,
                 current_timestamp,current_timestamp)};
 
+    my $status = ($task->step == 1) ? 'ready' : 'wait';
+
     $self->{dbh}->do(
         $task_insert_sql,
         undef,
-        ( $task->id, $task->seq_id, 'ready', $task->to_string, $task->step )
+        ( $task->id, $task->seq_id, $status, $task->to_string, $task->step )
     );
 }
 
@@ -116,6 +118,9 @@ sub _update_task {
     if ( $task->is_last_task or $task->is_status_error) {
         $self->_update_sequence($task);
     }
+    else {
+        $self->_setup_next_step($task);
+    }
 }
 
 sub _update_sequence {
@@ -134,62 +139,21 @@ sub _update_sequence {
     );
 }
 
-# sub update_sequence {
-#     my ( $self, $task ) = @_;
-#
-#     $self->{dbh}->begin_work;
-#
-#     if ( ! $task->result->{rc} ) {
-#         $self->set_sequence_status( $task->seq_id, 'running');
-#         $self->set_task_status( $task->task_id, 'complete', $task->result->{text} );
-#         $self->get_next_step($task->seq_id);
-#     }
-#     else {
-#
-#     }
-#
-#     $self->{dbh}->commit;
-# }
-#
-# sub set_sequence_status {
-#     my ( $self, $seq_id, $status ) = @_;
-#
-#     my $table = q{UPDATE transactions SET status = ?,
-#                     status_timestamp = current_timestamp WHERE id = ?};
-#
-#     $self->{dbh}->do( $table, undef, ( $status, $seq_id ) );
-# }
-#
-# sub set_task_status {
-#     my ( $self, $task_id, $status, $status_text ) = @_;
-#
-#     my $tasks_table = q{UPDATE tasks SET status = ?, status_text = ?,
-#                     status_timestamp = current_timestamp WHERE id = ?};
-#
-#     $self->{dbh}->do( $tasks_table, undef, ( $status, $task_id, $status_text ) );
-# }
-#
-# sub get_next_step {
-#     my ( $self, $seq_id ) = @_;
-#
-#     my $select = q{SELECT id FROM tasks WHERE transaction_id = ? AND step IN
-#                     (SELECT MIN(step) FROM tasks
-#                         WHERE transaction_id = ? AND status = 'new')};
-#
-#     my $task = $self->{dbh}->selectrow_hashref( $select, undef, ($seq_id) );
-#
-#     return $task->{id} ? $self->set_next_step($task->{id}) : 0;
-# }
-#
-# sub set_next_step {
-#     my ( $self, $task_id ) = @_;
-#
-#     my $tasks_table = q{UPDATE tasks SET status = ?,
-#                     status_timestamp = current_timestamp WHERE id = ?};
-#
-#     return $self->{dbh}->do( $tasks_table, undef, ( 'ready', $task_id ) );
-# }
-#
+sub _setup_next_step {
+    my ( $self, $task ) = @_;
+
+    my $setup_next_step_sql =
+        q{UPDATE tasks SET status = ?,
+            status_timestamp = current_timestamp WHERE transaction_id = ?
+                AND step = ?};
+
+    $self->{dbh}->do(
+        $setup_next_step_sql,
+        undef,
+        ( 'ready', $task->seq_id, $task->step + 1 )
+    );
+}
+
 # sub get_ready_tasks {
 #     my ($self) = @_;
 #
