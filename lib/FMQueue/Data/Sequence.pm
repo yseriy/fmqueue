@@ -35,7 +35,6 @@ sub from_string {
     for ( my $step = 1 ; $step <= $self->{size} ; $step++ ) {
         my $task = $self->{task_factory}->task;
 
-        $task->coder($self->{coder});
         $task->from_hashref($sequence->{tasks}->[$step - 1]);
 
         $task->step($step);
