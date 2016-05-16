@@ -6,44 +6,48 @@ use warnings;
 use Net::AMQP::RabbitMQ;
 
 sub new {
-    my ( $class, $message_factory ) = @_;
+    my ($class) = @_;
 
-    my $self = {};
+    return bless {}, $class;
+}
 
-    $self->{hostname}    = '';
-    $self->{options}     = {};
-    $self->{qos_options} = {};
+sub init {
+    my ( $self, $hostname, $options, $qos ) = @_;
+
+    $self->{hostname}    = $hostname || '';
+    $self->{options}     = $options  || {};
+    $self->{qos_options} = $qos || {};
 
     $self->{channel} = 1;
     $self->{timeout} = 0;
     $self->{consumer_tag} = '';
 
-    $self->{message_factory} = $message_factory;
+    $self->{message_factory} = '';
     $self->{mq} = Net::AMQP::RabbitMQ->new;
 
-    return bless $self, $class;
+    return $self;
 }
 
-sub hostname {
-    my ( $self, $hostname ) = @_;
+sub message_factory {
+    my ( $self, $message_factory ) = @_;
 
-    $self->{hostname} = $hostname if $hostname;
+    $self->{message_factory} = $message_factory if defined $message_factory;
 
     return $self;
 }
 
-sub options {
-    my ( $self, $options ) = @_;
+sub job_factory {
+    my ( $self, $job_factory ) = @_;
 
-    $self->{options} = $options if ref $options eq "HASH";
+    $self->{job_factory} = $job_factory if defined $job_factory;
 
     return $self;
 }
 
-sub qos {
-    my ( $self, $qos_options ) = @_;
+sub task_factory {
+    my ( $self, $task_factory ) = @_;
 
-    $self->{qos_options} = $qos_options if ref $qos_options eq "HASH";
+    $self->{task_factory} = $task_factory if defined $task_factory;
 
     return $self;
 }
@@ -68,26 +72,6 @@ sub reconnect {
     $self->connect if ! $self->{mq}->is_connected;
 }
 
-sub create_queue {
-    my ( $self, $queue ) = @_;
-
-    $self->{mq}->queue_declare(
-        $self->{channel},
-        $queue->name,
-        $queue->connect_options
-    );
-}
-
-sub delete_queue {
-    my ( $self, $queue ) = @_;
-
-    $self->{mq}->queue_delete(
-        $self->{channel},
-        $queue->name,
-        $queue->disconnect_options
-    );
-}
-
 sub listen_queue {
     my ( $self, $queue ) = @_;
 
@@ -98,29 +82,53 @@ sub listen_queue {
     );
 }
 
-sub cancel_listen_queue {
-    my ( $self, $queue ) = @_;
+sub receive_job {
+    my ($self) = @_;
 
-    $self->{mq}->cancel( $self->{channel}, $self->{consumer_tag} );
+    my $message = $self->{message_factory}->message->from_hashref(
+        $self->{mq}->recv($self->{timeout})
+    );
+
+    return $self->{job_factory}->job->from_message($message);
 }
 
-sub send {
-    my ( $self, $queue, $message ) = @_;
+sub send_job_id {
+    my ( $self, $job ) = @_;
+
+    $self->{mq}->publish(
+        $self->{channel},
+        $job->message->properties->{reply_to},
+        $job->id,
+        {},
+        { correlation_id => $job->message->properties->{correlation_id} }
+    );
+}
+
+sub receive_task {
+    my ($self) = @_;
+
+    my $message = $self->{message_factory}->message->from_hashref(
+        $self->{mq}->recv($self->{timeout})
+    );
+
+    return $self->{task_factory}->task->from_message($message);
+}
+
+sub send_task {
+    my ( $self, $queue, $task ) = @_;
+
+    $self->{mq}->queue_declare(
+        $self->{channel},
+        $queue->name,
+        $queue->connect_options
+    );
 
     $self->{mq}->publish(
         $self->{channel},
         $queue->name,
-        $message->to_string,
-        $message->send_options,
-        $message->properties
-    );
-}
-
-sub receive {
-    my ($self) = @_;
-
-    return $self->{message_factory}->message->from_hashref(
-        $self->{mq}->recv($self->{timeout})
+        $task->to_string,
+        {},
+        {}
     );
 }
 
