@@ -19,6 +19,16 @@ sub init {
     $self->{pass} = $pass;
     $self->{dbh}  = '';
 
+    $self->{task_factory} = '';
+
+    return $self;
+}
+
+sub task_factory {
+    my ( $self, $task_factory ) = @_;
+
+    $self->{task_factory} = $task_factory if defined $task_factory;
+
     return $self;
 }
 
@@ -45,30 +55,30 @@ sub reconnect {
     $self->connect if ! $self->{dbh}->ping;
 }
 
-sub insert_sequence {
-    my ( $self, $sequence ) = @_;
+sub submit_job {
+    my ( $self, $job ) = @_;
 
     $self->{dbh}->begin_work;
 
-    $self->_insert_sequence($sequence);
+    $self->_insert_job($job);
 
     $self->{dbh}->commit;
 }
 
-sub _insert_sequence {
-    my ( $self, $sequence ) = @_;
+sub _insert_job {
+    my ( $self, $job ) = @_;
 
-    my $sequence_insert_sql =
+    my $insert_gob_sql =
         q{INSERT INTO transactions (id,status,account,start_timestamp,
             status_timestamp) VALUES (?,?,?,current_timestamp,current_timestamp)};
 
     $self->{dbh}->do(
-        $sequence_insert_sql,
+        $insert_gob_sql,
         undef,
-        ( $sequence->id, 'ready', $sequence->user_id )
+        ( $job->id, 'ready', $job->user_id )
     );
 
-    foreach my $task (@{$sequence->tasks}) {
+    foreach my $task (@{$job->tasks}) {
         $self->_insert_task($task);
     }
 }
@@ -76,7 +86,7 @@ sub _insert_sequence {
 sub _insert_task {
     my ( $self, $task ) = @_;
 
-    my $task_insert_sql =
+    my $insert_task_sql =
         q{INSERT INTO tasks (id,transaction_id,status,command,step,
             start_timestamp,status_timestamp) VALUES(?,?,?,?,?,
                 current_timestamp,current_timestamp)};
@@ -84,13 +94,13 @@ sub _insert_task {
     my $status = ($task->step == 1) ? 'ready' : 'wait';
 
     $self->{dbh}->do(
-        $task_insert_sql,
+        $insert_task_sql,
         undef,
         ( $task->id, $task->seq_id, $status, $task->to_string, $task->step )
     );
 }
 
-sub update_task {
+sub set_task_result {
     my ( $self, $task ) = @_;
 
     $self->{dbh}->begin_work;
@@ -103,73 +113,109 @@ sub update_task {
 sub _update_task {
     my ( $self, $task ) = @_;
 
-    my $task_update_sql =
+    my $update_task_sql =
         q{UPDATE tasks SET status = ?, status_text = ?,
             status_timestamp = current_timestamp WHERE id = ?};
 
     my $status = $task->is_status_error ? 'error' : 'complete';
 
     $self->{dbh}->do(
-        $task_update_sql,
+        $update_task_sql,
         undef,
         ( $status, $task->result->{text}, $task->id )
     );
 
     if ( $task->is_last_task or $task->is_status_error) {
-        $self->_update_sequence($task);
+        $self->_update_job($task);
     }
     else {
-        $self->_setup_next_step($task);
+        $self->_set_next_step($task);
     }
 }
 
-sub _update_sequence {
+sub _update_job {
     my ( $self, $task ) = @_;
 
-    my $sequence_update_sql =
+    my $update_job_sql =
         q{UPDATE transactions SET status = ?,
             status_timestamp = current_timestamp WHERE id = ?};
 
     my $status = $task->is_status_error ? 'error' : 'complete';
 
     $self->{dbh}->do(
-        $sequence_update_sql,
+        $update_job_sql,
         undef,
         ( $status, $task->seq_id )
     );
 }
 
-sub _setup_next_step {
+sub _set_next_step {
     my ( $self, $task ) = @_;
 
-    my $setup_next_step_sql =
+    my $set_next_step_sql =
         q{UPDATE tasks SET status = ?,
             status_timestamp = current_timestamp WHERE transaction_id = ?
                 AND step = ?};
 
     $self->{dbh}->do(
-        $setup_next_step_sql,
+        $set_next_step_sql,
         undef,
         ( 'ready', $task->seq_id, $task->step + 1 )
     );
 }
 
-# sub get_ready_tasks {
-#     my ($self) = @_;
-#
-#     my $result_set   = [];
-#     my $ready_status = 'ready';
-#     my $sql = q{SELECT * FROM tasks WHERE status = ?};
-#
-#     my $sth = $self->{dbh}->prepare($sql);
-#
-#     $sth->execute($ready_status);
-#
-#     while(my $ref = $sth->fetchrow_hashref) {
-#         push @{$result_set}, $ref;
-#     }
-#
-#     return $result_set;
-# }
+sub get_ready_tasks {
+    my ($self) = @_;
+
+    my $result_set = [];
+    my $get_ready_tasks_sql = q{SELECT * FROM tasks WHERE status = ?};
+
+    my $sth = $self->{dbh}->prepare($get_ready_tasks_sql);
+    $sth->execute('ready');
+
+    while(my $ref = $sth->fetchrow_hashref) {
+        my $task = $self->{task_factory}->task;
+
+        $task->from_string($ref->{command});
+
+        push @{$result_set}, $task;
+    }
+
+    return $result_set;
+}
+
+sub processing_task {
+    my ( $self, $task ) = @_;
+
+    my $processing_task_sql =
+        q{UPDATE tasks SET status = ?, status_timestamp = current_timestamp
+            WHERE id = ?};
+
+    $self->{dbh}->begin_work;
+
+    $self->{dbh}->do(
+        $processing_task_sql,
+        undef,
+        ( 'running', $task->id )
+    );
+
+    $self->_set_job_running($task) if $task->step == 1;
+
+    $self->{dbh}->commit;
+}
+
+sub _set_job_running {
+    my ( $self, $task ) = @_;
+
+    my $set_job_running_sql =
+        q{UPDATE transactions SET status = ?,
+            status_timestamp = current_timestamp WHERE id = ?};
+
+    $self->{dbh}->do(
+        $set_job_running_sql,
+        undef,
+        ( 'running', $task->seq_id )
+    );
+}
 
 1;
