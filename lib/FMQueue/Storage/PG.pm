@@ -12,9 +12,9 @@ sub new {
 }
 
 sub init {
-    my ( $self, $dns, $user, $pass ) = @_;
+    my ( $self, $dsn, $user, $pass ) = @_;
 
-    $self->{dsn}  = $dns;
+    $self->{dsn}  = $dsn;
     $self->{user} = $user;
     $self->{pass} = $pass;
     $self->{dbh}  = '';
