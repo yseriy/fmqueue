@@ -23,6 +23,8 @@ sub init {
     $self->{consumer_tag} = '';
 
     $self->{message_factory} = '';
+    $self->{job_factory}  = '';
+    $self->{task_factory} = '';
     $self->{mq} = Net::AMQP::RabbitMQ->new;
 
     return $self;
