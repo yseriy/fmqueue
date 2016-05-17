@@ -1,10 +1,10 @@
-package FMQueue::Factory::Job;
+package FMQueue::Factory::Data::Job;
 
 use strict;
 use warnings;
 
 use FMQueue::Data::Job;
-use FMQueue::Factory::Task;
+use FMQueue::Factory::Data::Task;
 use FMQueue::Utils::Serializer::JSON;
 use FMQueue::Utils::UG::UUID;
 
@@ -18,7 +18,7 @@ sub job {
     my ($self) = @_;
 
     return FMQueue::Data::Job->new->init(
-        FMQueue::Factory::Task->new,
+        FMQueue::Factory::Data::Task->new,
         FMQueue::Utils::Serializer::JSON->new->init,
         FMQueue::Utils::UG::UUID->new->init
     );

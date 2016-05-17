@@ -1,4 +1,4 @@
-package FMQueue::Factory::Task;
+package FMQueue::Factory::Data::Task;
 
 use strict;
 use warnings;

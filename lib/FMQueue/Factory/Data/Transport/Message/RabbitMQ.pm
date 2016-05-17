@@ -1,4 +1,4 @@
-package FMQueue::Factory::Transport::Message::RabbitMQ;
+package FMQueue::Factory::Data::Transport::Message::RabbitMQ;
 
 use strict;
 use warnings;
