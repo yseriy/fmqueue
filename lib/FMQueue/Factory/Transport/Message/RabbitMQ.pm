@@ -8,15 +8,13 @@ use FMQueue::Data::Transport::Message::RabbitMQ;
 sub new {
     my ($class) = @_;
 
-    my $self = {};
-
-    return bless $self, $class;
+    return bless {}, $class;
 }
 
 sub message {
-    my ( $self, $raw_message ) = @_;
+    my ($self) = @_;
 
-    return FMQueue::Data::Transport::Message::RabbitMQ->new($raw_message);
+    return FMQueue::Data::Transport::Message::RabbitMQ->new;
 }
 
 1;

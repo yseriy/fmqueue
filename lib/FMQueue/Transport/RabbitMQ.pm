@@ -77,6 +77,12 @@ sub reconnect {
 sub listen_queue {
     my ( $self, $queue ) = @_;
 
+    $self->{mq}->queue_declare(
+        $self->{channel},
+        $queue->name,
+        $queue->connect_options
+    );    
+
     $self->{consumer_tag} = $self->{mq}->consume(
         $self->{channel},
         $queue->name,
