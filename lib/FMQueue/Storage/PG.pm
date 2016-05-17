@@ -96,7 +96,7 @@ sub _insert_task {
     $self->{dbh}->do(
         $insert_task_sql,
         undef,
-        ( $task->id, $task->seq_id, $status, $task->to_string, $task->step )
+        ( $task->id, $task->job_id, $status, $task->to_string, $task->step )
     );
 }
 
@@ -145,7 +145,7 @@ sub _update_job {
     $self->{dbh}->do(
         $update_job_sql,
         undef,
-        ( $status, $task->seq_id )
+        ( $status, $task->job_id )
     );
 }
 
@@ -160,7 +160,7 @@ sub _set_next_step {
     $self->{dbh}->do(
         $set_next_step_sql,
         undef,
-        ( 'ready', $task->seq_id, $task->step + 1 )
+        ( 'ready', $task->job_id, $task->step + 1 )
     );
 }
 
@@ -214,7 +214,7 @@ sub _set_job_running {
     $self->{dbh}->do(
         $set_job_running_sql,
         undef,
-        ( 'running', $task->seq_id )
+        ( 'running', $task->job_id )
     );
 }
 

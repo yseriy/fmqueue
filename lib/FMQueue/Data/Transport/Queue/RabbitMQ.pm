@@ -19,10 +19,7 @@ sub new {
 sub name {
     my ( $self, $name ) = @_;
 
-    if ($name) {
-        $self->{name} = $name;
-        return $self;
-    }
+    $self->{name} = $name if defined $name;
 
     return $self->{name};
 }
