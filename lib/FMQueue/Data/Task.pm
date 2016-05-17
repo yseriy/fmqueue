@@ -14,7 +14,7 @@ sub init {
 
     $self->{keys} = [qw{id job_id address step job_size data result}];
 
-    $self->{message} =
+    $self->{message} = undef;
 
     return $self;
 }

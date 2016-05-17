@@ -16,6 +16,8 @@ sub init {
     $self->{user_id} = '';
     $self->{size}    = 0;
     $self->{tasks}   = [];
+    $self->{message} = undef;
+
     $self->{coder}   = $coder;
     $self->{generator} = $generator;
     $self->{task_factory} = $task_factory;

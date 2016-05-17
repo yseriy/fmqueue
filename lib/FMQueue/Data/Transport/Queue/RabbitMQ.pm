@@ -6,14 +6,18 @@ use warnings;
 sub new {
     my ($class) = @_;
 
-    my $self = {};
+    return bless {}, $class;
+}
+
+sub init {
+    my ($self) = @_;
 
     $self->{name} = '';
     $self->{connect_options} = {};
     $self->{disconnect_options} = {};
     $self->{listen_options} = {};
 
-    return bless $self, $class;
+    return $self;
 }
 
 sub name {

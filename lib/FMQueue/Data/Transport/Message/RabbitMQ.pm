@@ -6,14 +6,18 @@ use warnings;
 sub new {
     my ($class) = @_;
 
-    my $self = {};
+    return bless {}, $class;
+}
+
+sub init {
+    my ($self) = @_;
 
     $self->{body} = '';
     $self->{properties} = {};
     $self->{info} = {};
     $self->{send_options} = {};
 
-    return bless $self, $class;
+    return $self;
 }
 
 sub from_hashref {
@@ -30,12 +34,6 @@ sub to_string {
     my ($self) = @_;
 
     return $self->{body};
-}
-
-sub load_task {
-    my ( $self, $task ) = @_;
-
-    $self->{body} = $task->to_string;
 }
 
 sub properties {
