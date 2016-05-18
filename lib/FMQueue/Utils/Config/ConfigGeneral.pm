@@ -6,23 +6,27 @@ use warnings;
 use Config::General;
 
 sub new {
-    my ( $class, $config_path ) = @_;
+    my ($class) = @_;
 
-    die "Config path is empty" if ! $config_path;
-
-    my $self = {};
-
-    $self->{config} = Config::General->new($config_path);
-
-    return bless $self, $class;
+    return bless {}, $class;
 }
 
-sub parameters {
+sub init {
+    my ( $self, $config_path ) = @_;
+
+    die "Config path empty" if ! $config_path;
+
+    my %config = Config::General->new($config_path)->getall;
+
+    $self->{config} = \%config;
+
+    return $self;
+}
+
+sub log_path {
     my ($self) = @_;
 
-    my %config = $self->{config}->getall;
-
-    return \%config;
+    return $self->{config}->{log}->{path};
 }
 
 1;

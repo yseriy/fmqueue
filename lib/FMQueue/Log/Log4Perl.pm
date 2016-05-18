@@ -6,19 +6,21 @@ use warnings;
 use Log::Log4perl;
 
 sub new {
-    my ( $class, $config ) = @_;
+    my ($class) = @_;
 
-    my $self = {};
-
-    $self->{config} = $config->parameters->{config_path} || 'etc/log.conf';
-
-    Log::Log4perl::init($self->{config});
-    $self->{log} = Log::Log4perl->get_logger;
-
-    return bless $self, $class;
+    return bless {}, $class;
 }
 
-sub get_logger {
+sub init {
+    my ( $self, $config ) = @_;
+
+    Log::Log4perl::init($config->parameters->{config_path});
+    $self->{log} = Log::Log4perl->get_logger;
+
+    return $self;
+}
+
+sub logger {
     my ($self) = @_;
 
     return $self->{log};
