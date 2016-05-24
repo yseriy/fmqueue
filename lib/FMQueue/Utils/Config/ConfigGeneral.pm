@@ -6,9 +6,15 @@ use warnings;
 use Config::General;
 
 sub new {
-    my ($class) = @_;
+    my ( $class, @params ) = @_;
 
-    return bless {}, $class;
+    my $self = bless {
+        config => undef,
+    }, $class;
+
+    $self->init(@params)
+
+    return $self;
 }
 
 sub init {
@@ -17,10 +23,25 @@ sub init {
     die "Config path empty" if ! $config_path;
 
     my %config = Config::General->new($config_path)->getall;
-
     $self->{config} = \%config;
+}
 
-    return $self;
+sub transport_hostname {
+    my ($self) = @_;
+
+    return $self->{config}->{transport}->{connect}->{hostname};
+}
+
+sub options {
+    my ($self) = @_;
+
+    return $self->{config}->{transport}->{connect}->{options};
+}
+
+sub qos {
+    my ($self) = @_;
+
+    return self->{config}->{transport}->{connect}->{qos};
 }
 
 sub log_path {

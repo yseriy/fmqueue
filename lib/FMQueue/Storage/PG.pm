@@ -6,30 +6,31 @@ use warnings;
 use DBI;
 
 sub new {
-    my ($class) = @_;
+    my ( $class, @params ) = @_;
 
-    return bless {}, $class;
+    my $self = bless {
+        dsn  => '',
+        user => '',
+        pass => '',
+        dbh  => undef,
+        task_factory => undef,
+    }, $class;
+
+    $self->init(@params);
+
+    return $self;
 }
 
 sub init {
-    my ( $self, $dsn, $user, $pass ) = @_;
+    my ( $self, $connect, $task_factory ) = @_;
 
-    $self->{dsn}  = $dsn;
-    $self->{user} = $user;
-    $self->{pass} = $pass;
-    $self->{dbh}  = '';
-
-    $self->{task_factory} = '';
-
-    return $self;
-}
-
-sub task_factory {
-    my ( $self, $task_factory ) = @_;
+    if ( defined $connect ) {
+        $self->{dsn}  = $connect->dsn;
+        $self->{user} = $connect->user;
+        $self->{pass} = $connect->pass;
+    }
 
     $self->{task_factory} = $task_factory if defined $task_factory;
-
-    return $self;
 }
 
 sub connect {

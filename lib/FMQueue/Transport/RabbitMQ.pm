@@ -6,52 +6,35 @@ use warnings;
 use Net::AMQP::RabbitMQ;
 
 sub new {
-    my ($class) = @_;
+    my ( $class, @params ) = @_;
 
-    return bless {}, $class;
+    my $self = bless {
+        hostname     => '',
+        options      => undef,
+        qos_options  => undef,
+        channel      => 1,
+        timeout      => 0,
+        consumer_tag => '',
+        factory      => undef,
+        mq           => undef,
+    }, $class;
+
+    $self->init(@params);
+
+    return $self;
 }
 
 sub init {
-    my ( $self, $hostname, $options, $qos ) = @_;
+    my ( $self, $connect, $factory ) = @_;
 
-    $self->{hostname}    = $hostname || '';
-    $self->{options}     = $options  || {};
-    $self->{qos_options} = $qos || {};
+    if ( defined $connect ) {
+        $self->{hostname}    = $connect->hostname;
+        $self->{options}     = $connect->options;
+        $self->{qos_options} = $connect->qos;
+    }
 
-    $self->{channel} = 1;
-    $self->{timeout} = 0;
-    $self->{consumer_tag} = '';
-
-    $self->{message_factory} = '';
-    $self->{job_factory}  = '';
-    $self->{task_factory} = '';
+    $self->{factory} = $factory if defined $factory;
     $self->{mq} = Net::AMQP::RabbitMQ->new;
-
-    return $self;
-}
-
-sub message_factory {
-    my ( $self, $message_factory ) = @_;
-
-    $self->{message_factory} = $message_factory if defined $message_factory;
-
-    return $self;
-}
-
-sub job_factory {
-    my ( $self, $job_factory ) = @_;
-
-    $self->{job_factory} = $job_factory if defined $job_factory;
-
-    return $self;
-}
-
-sub task_factory {
-    my ( $self, $task_factory ) = @_;
-
-    $self->{task_factory} = $task_factory if defined $task_factory;
-
-    return $self;
 }
 
 sub connect {
@@ -81,9 +64,9 @@ sub listen_queue {
         $self->{channel},
         $queue->name,
         $queue->connect_options
-    );    
+    );
 
-    $self->{consumer_tag} = $self->{mq}->consume(
+    $self->{mq}->consume(
         $self->{channel},
         $queue->name,
         $queue->listen_options
@@ -93,11 +76,11 @@ sub listen_queue {
 sub receive_job {
     my ($self) = @_;
 
-    my $message = $self->{message_factory}->message->from_hashref(
+    my $message = $self->{factory}->message->from_hashref(
         $self->{mq}->recv($self->{timeout})
     );
 
-    return $self->{job_factory}->job->from_message($message);
+    return $self->{factory}->job->from_message($message);
 }
 
 sub send_job_id {
@@ -115,11 +98,11 @@ sub send_job_id {
 sub receive_task {
     my ($self) = @_;
 
-    my $message = $self->{message_factory}->message->from_hashref(
+    my $message = $self->{factory}->message->from_hashref(
         $self->{mq}->recv($self->{timeout})
     );
 
-    return $self->{task_factory}->task->from_message($message);
+    return $self->{factory}->task->from_message($message);
 }
 
 sub send_task {

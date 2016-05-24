@@ -3,55 +3,60 @@ package FMQueue::Factory::RabbitPG;
 use strict;
 use warnings;
 
-use FMQueue::Log::Log4Perl;
-use FMQueue::Config::ConfigSimple::RabbitMQ;
-use FMQueue::Config::ConfigSimple::DB;
-use FMQueue::Config::ConfigSimple::Log4Perl;
-use FMQueue::Transport::Worker::RabbitMQ;
-use FMQueue::Transport::Client::RabbitMQ;
+use FMQueue::Utils::Config::ConfigGeneral;
+use FMQueue::Factory::Data;
+use FMQueue::Data::Connect::Params::PG;
+use FMQueue::Data::Connect::Params::RabbitMQ;
+use FMQueue::Transport::RabbitMQ;
 use FMQueue::Storage::PG;
 use FMQueue::Signal::Semaphore;
 use FMQueue::Utils::Daemonize;
 
 sub new {
-    my ( $class, $config ) = @_;
+    my ( $class, @params ) = @_;
 
-    my $self = {};
+    my $self = bless {
+        config => '',
+    }, $class;
 
-    $self->{config} = $config || '';
+    $self->init(@params);
 
-    return bless $self, $class;
+    return $self;
 }
 
-sub log {
-    my ($self) = @_;
+sub init {
+    my ( $self, $config_path ) = @_;
 
-    return FMQueue::Log::Log4Perl->new(
-        FMQueue::Config::ConfigSimple::Log4Perl->new($self->{config})
-    );
+    $self->{config} = FMQueue::Utils::Config::ConfigGeneral->new($config_path);
 }
 
-sub worker {
+sub transport {
     my ($self) = @_;
 
-    return FMQueue::Transport::Worker::RabbitMQ->new(
-        FMQueue::Config::ConfigSimple::RabbitMQ->new($self->{config})
-    );
-}
+    my $connect = FMQueue::Data::Connect::Params::RabbitMQ->new;
 
-sub client {
-    my ($self) = @_;
+    $connect->hostname($self->{config}->hostname);
+    $connect->options($self->{config}->options);
+    $connect->qos($self->{config}->qos);
 
-    return FMQueue::Transport::Client::RabbitMQ->new( 
-        FMQueue::Config::ConfigSimple::RabbitMQ->new($self->{config})
+    return FMQueue::Transport::RabbitMQ->new(
+        $connect,
+        FMQueue::Factory::Data->new
     );
 }
 
 sub storage {
     my ($self) = @_;
 
+    my $connect = FMQueue::Data::Connect::Params::PG->new;
+
+    $connect->dsn($self->{config}->dsn);
+    $connect->user($self->{config}->user);
+    $connect->pass($self->{config}->pass);
+
     return FMQueue::Storage::PG->new(
-        FMQueue::Config::ConfigSimple::DB->new($self->{config})
+        $connect,
+        FMQueue::Factory::Data->new
     );
 }
 

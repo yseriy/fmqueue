@@ -1,4 +1,4 @@
-package FMQueue::Data::Connect::Params::Pg;
+package FMQueue::Data::Connect::Params::PG;
 
 use strict;
 use warnings;
